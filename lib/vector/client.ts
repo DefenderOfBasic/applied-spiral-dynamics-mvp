@@ -1,4 +1,4 @@
-import { ChromaClient } from "chromadb";
+import { ChromaClient, CloudClient } from "chromadb";
 
 let chromaClient: ChromaClient | null = null;
 let connectionAttempted = false;
@@ -8,24 +8,44 @@ export function getChromaClient(): ChromaClient {
   if (!chromaClient && !connectionAttempted) {
     connectionAttempted = true;
 
+    const chromaTenant = process.env.CHROMA_TENANT;
+    const chromaDatabase = process.env.CHROMA_DATABASE;
+    const chromaApiKey = process.env.CHROMA_API_KEY;
     const chromaUrl = process.env.CHROMA_URL;
 
-    if (!chromaUrl) {
+    // If no configuration provided, disable ChromaDB
+    if (!chromaApiKey && !chromaUrl) {
       connectionError = new Error(
-        "CHROMA_URL environment variable is required. Pixel extraction will continue but RAG context will be disabled."
+        "ChromaDB not configured. Pixel extraction will continue but RAG context will be disabled."
       );
       console.warn(connectionError.message);
       throw connectionError;
     }
 
     try {
-      chromaClient = new ChromaClient({
-        path: chromaUrl,
-        auth: process.env.CHROMA_API_KEY
-          ? { provider: "token", credentials: process.env.CHROMA_API_KEY }
-          : undefined,
-      });
-      console.log("✅ ChromaDB client initialized successfully");
+      // Use CloudClient if tenant/database/apiKey are provided (ChromaDB Cloud)
+      if (chromaTenant && chromaDatabase && chromaApiKey) {
+        chromaClient = new CloudClient({
+          tenant: chromaTenant,
+          database: chromaDatabase,
+          apiKey: chromaApiKey,
+        });
+        console.log("✅ ChromaDB Cloud client initialized successfully");
+      }
+      // Otherwise use standard ChromaClient (self-hosted)
+      else if (chromaUrl) {
+        chromaClient = new ChromaClient({
+          path: chromaUrl,
+          auth: chromaApiKey
+            ? { provider: "token", credentials: chromaApiKey }
+            : undefined,
+        });
+        console.log("✅ ChromaDB client initialized successfully");
+      } else {
+        throw new Error(
+          "ChromaDB configuration incomplete. Provide either (CHROMA_TENANT + CHROMA_DATABASE + CHROMA_API_KEY) for Cloud or CHROMA_URL for self-hosted."
+        );
+      }
     } catch (error) {
       connectionError =
         error instanceof Error

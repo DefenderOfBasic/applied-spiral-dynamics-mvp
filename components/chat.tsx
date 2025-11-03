@@ -32,6 +32,7 @@ import { MultimodalInput } from "./multimodal-input";
 import { getChatHistoryPaginationKey } from "./sidebar-history";
 import { toast } from "./toast";
 import type { VisibilityType } from "./visibility-selector";
+import { createLogger } from "@/lib/logger";
 
 export function Chat({
   id,
@@ -50,6 +51,7 @@ export function Chat({
   autoResume: boolean;
   initialLastContext?: AppUsage;
 }) {
+  const log = createLogger("chat");
   const { visibilityType } = useChatVisibility({
     chatId: id,
     initialVisibilityType,
@@ -85,6 +87,15 @@ export function Chat({
       api: "/api/chat",
       fetch: fetchWithErrorHandlers,
       prepareSendMessagesRequest(request) {
+        try {
+          const last = request.messages.at(-1);
+          log.info("send: preparing request", {
+            id: request.id,
+            role: last?.role,
+            model: currentModelIdRef.current,
+            visibility: visibilityType,
+          });
+        } catch {}
         return {
           body: {
             id: request.id,
@@ -98,14 +109,24 @@ export function Chat({
     }),
     onData: (dataPart) => {
       setDataStream((ds) => (ds ? [...ds, dataPart] : []));
+      // Surface stream progress in browser console during local dev
+      log.log("stream:data", { type: dataPart.type });
+      if (dataPart.type === "data-log") {
+        const d: any = (dataPart as any).data;
+        const fn = d?.level === "error" ? log.error : d?.level === "warn" ? log.warn : log.info;
+        fn("server", d);
+      }
       if (dataPart.type === "data-usage") {
+        log.info("usage", dataPart.data);
         setUsage(dataPart.data);
       }
     },
     onFinish: () => {
+      log.info("stream:finish");
       mutate(unstable_serialize(getChatHistoryPaginationKey));
     },
     onError: (error) => {
+      log.error("stream:error", error);
       if (error instanceof ChatSDKError) {
         // Check if it's a credit card error
         if (
@@ -117,6 +138,26 @@ export function Chat({
             type: "error",
             description: error.message,
           });
+        }
+      } else {
+        // Handle network interruptions like net::ERR_INCOMPLETE_CHUNKED_ENCODING
+        const message =
+          (error as any)?.message || String(error) || "Stream interrupted";
+        if (message.includes("INCOMPLETE_CHUNKED_ENCODING") || message.includes("NetworkError") || message.includes("TypeError")) {
+          toast({
+            type: "error",
+            description: "Connection interrupted while streaming. Retrying may fix it.",
+            action: {
+              label: "Retry",
+              onClick: () => {
+                try {
+                  regenerate();
+                } catch {}
+              },
+            },
+          });
+        } else {
+          toast({ type: "error", description: message });
         }
       }
     },

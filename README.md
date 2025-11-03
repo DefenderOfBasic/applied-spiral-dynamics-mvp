@@ -33,6 +33,40 @@ See [DATAFLOW.md](./DATAFLOW.md) for the full technical architecture.
 
 ### Setup
 
+#### Option 1: Automated Setup (Recommended)
+
+Use our setup script that handles everything:
+
+```bash
+chmod +x scripts/setup-dev.sh
+./scripts/setup-dev.sh
+```
+
+This script will:
+
+- ✅ Check Node.js and pnpm versions
+- ✅ Install dependencies
+- ✅ Create `.env.local` from template
+- ✅ Generate `AUTH_SECRET` automatically
+- ✅ Run database migrations
+- ⚠️ Prompt you to add `POSTGRES_URL` and `OPENAI_API_KEY`
+
+After the script completes, edit `.env.local` with your database and API key, then:
+
+```bash
+pnpm db:seed  # Optional: Create dev user and sample pixels
+pnpm dev      # Start development server
+```
+
+Open http://localhost:3000 and login with:
+
+- Email: `dev@example.com`
+- Password: `password`
+
+---
+
+#### Option 2: Manual Setup
+
 1. **Clone and install:**
 
 ```bash
@@ -45,10 +79,19 @@ pnpm install
 
 ```bash
 cp env.example .env.local
-# Edit .env.local with your keys:
-# - POSTGRES_URL (required)
-# - OPENAI_API_KEY (required)
-# - AUTH_SECRET (generate with: openssl rand -base64 32)
+```
+
+Edit `.env.local` with your keys:
+
+```bash
+# REQUIRED
+POSTGRES_URL=postgresql://...        # Get from Vercel/Neon/Supabase
+OPENAI_API_KEY=sk-proj-...          # Get from OpenAI
+AUTH_SECRET=$(openssl rand -base64 32)  # Generate automatically
+
+# OPTIONAL (recommended for production)
+CHROMA_URL=http://localhost:8000    # For RAG context
+REDIS_URL=redis://...               # For distributed cache
 ```
 
 3. **Run migrations:**
@@ -57,22 +100,25 @@ cp env.example .env.local
 pnpm db:migrate
 ```
 
-4. **Start dev server:**
+4. **Seed development data (optional but recommended):**
+
+```bash
+pnpm db:seed
+```
+
+This creates:
+
+- Dev user: `dev@example.com` / `password`
+- Sample chat with 5 pre-scored pixels across different Spiral stages
+- Test data to explore pixel extraction immediately
+
+5. **Start dev server:**
 
 ```bash
 pnpm dev
 ```
 
 Open http://localhost:3000 and start chatting!
-
-### Using the Setup Script (Recommended)
-
-We have a script that does all the above:
-
-```bash
-chmod +x scripts/setup-dev.sh
-./scripts/setup-dev.sh
-```
 
 ## How It Works (The Cool Part)
 

@@ -240,6 +240,7 @@ export async function POST(request: Request) {
         title,
         visibility: selectedVisibilityType,
       });
+      (globalThis as any).__tmpCreateLog = { level: "info", message: "chat:created", meta: { id } };
       // New chat - no need to fetch messages, it's empty
     }
 
@@ -266,9 +267,11 @@ export async function POST(request: Request) {
         },
       ],
     });
+    const userSavedLog = { level: "info" as const, message: "messages:user_saved", meta: { id: message.id } };
 
     const streamId = generateUUID();
     await createStreamId({ streamId, chatId: id });
+    const streamIdLog = { level: "info" as const, message: "stream:id_created", meta: { streamId } };
 
     const userMessageText = getTextFromMessage(message);
     let finalMergedUsage: AppUsage | undefined;
@@ -277,8 +280,15 @@ export async function POST(request: Request) {
     // FAST PATH: Get context for immediate response
     let activatedPixels: ActivatedPixel[] = [];
     let cachedGuidance: InsightOutput | undefined;
+    const serverLogs: Array<{ level: "info" | "warn" | "error"; message: string; meta?: unknown }> = [];
+    if ((globalThis as any).__tmpCreateLog) {
+      serverLogs.push((globalThis as any).__tmpCreateLog);
+      delete (globalThis as any).__tmpCreateLog;
+    }
+    serverLogs.push(userSavedLog, streamIdLog);
 
     try {
+      serverLogs.push({ level: "info", message: "rag:start" });
       const contextResult = await retrieveContextForTurn({
         userMessage: userMessageText,
         userId: session.user.id,
@@ -286,15 +296,22 @@ export async function POST(request: Request) {
       });
       activatedPixels = contextResult.activatedPixels;
       cachedGuidance = contextResult.cachedGuidance;
+      serverLogs.push({
+        level: "info",
+        message: "rag:success",
+        meta: { activatedPixels: activatedPixels.length, hasGuidance: Boolean(cachedGuidance) },
+      });
     } catch (error) {
       console.error(
         "RAG context retrieval failed, continuing without context:",
         error
       );
+      serverLogs.push({ level: "warn", message: "rag:error", meta: String(error) });
       // Continue without RAG context - graceful degradation
     }
 
     // Start Interpreter in parallel (doesn't block response)
+    serverLogs.push({ level: "info", message: "interpreter:start" });
     const interpreterPromise = runInterpreterParallel({
       userMessage: userMessageText,
       userId: session.user.id,
@@ -303,7 +320,7 @@ export async function POST(request: Request) {
         const pixelData = pixelExtraction.pixel;
 
         try {
-          const [dbResult] = await Promise.allSettled([
+          const [dbResult, chromaResult] = await Promise.allSettled([
             savePixel({
               chatId: id,
               messageId: message.id,
@@ -327,14 +344,24 @@ export async function POST(request: Request) {
 
           if (dbResult.status === "rejected") {
             console.error("Failed to save pixel to database:", dbResult.reason);
+            serverLogs.push({ level: "warn", message: "pixel:db_error", meta: String(dbResult.reason) });
+          } else {
+            serverLogs.push({ level: "info", message: "pixel:db_saved", meta: { id: dbResult.value?.id ?? chromaId } });
+          }
+          if (chromaResult.status === "rejected") {
+            serverLogs.push({ level: "warn", message: "pixel:chroma_error", meta: String(chromaResult.reason) });
+          } else {
+            serverLogs.push({ level: "info", message: "pixel:chroma_upserted", meta: { id: chromaId } });
           }
         } catch (error) {
           console.error("Pixel extraction callback failed:", error);
+          serverLogs.push({ level: "warn", message: "pixel:callback_error", meta: String(error) });
           // Log but don't throw - this is background work
         }
       },
     }).catch((error) => {
       console.error("Interpreter parallel execution failed:", error);
+      serverLogs.push({ level: "error", message: "interpreter:error", meta: String(error) });
       return { no_pixel: true, reason: "Extraction failed" } as const;
     });
 
@@ -348,6 +375,11 @@ export async function POST(request: Request) {
 
     const stream = createUIMessageStream({
       execute: ({ writer: dataStream }) => {
+        // Flush server-side logs accumulated before streaming began
+        for (const log of serverLogs) {
+          dataStream.write({ type: "data-log", data: log });
+        }
+        serverLogs.length = 0;
         const result = streamText({
           model: myProvider.languageModel(selectedChatModel),
           system: enrichedSystem,
@@ -392,6 +424,7 @@ export async function POST(request: Request) {
                   type: "data-usage",
                   data: finalMergedUsage,
                 });
+                dataStream.write({ type: "data-log", data: { level: "info", message: "stream:finish" } });
                 return;
               }
 
@@ -407,10 +440,12 @@ export async function POST(request: Request) {
               const summary = getUsage({ modelId, usage, providers });
               finalMergedUsage = { ...usage, ...summary, modelId } as AppUsage;
               dataStream.write({ type: "data-usage", data: finalMergedUsage });
+              dataStream.write({ type: "data-log", data: { level: "info", message: "stream:finish" } });
             } catch (err) {
               console.warn("TokenLens enrichment failed", err);
               finalMergedUsage = usage;
               dataStream.write({ type: "data-usage", data: finalMergedUsage });
+              dataStream.write({ type: "data-log", data: { level: "warn", message: "tokenlens:error", meta: String(err) } });
             }
           },
         });
@@ -435,6 +470,7 @@ export async function POST(request: Request) {
             chatId: id,
           })),
         });
+        dataStream.write({ type: "data-log", data: { level: "info", message: "messages:assistant_saved", meta: { count: messages.length } } });
 
         if (finalMergedUsage) {
           try {
@@ -442,13 +478,16 @@ export async function POST(request: Request) {
               chatId: id,
               context: finalMergedUsage,
             });
+            dataStream.write({ type: "data-log", data: { level: "info", message: "chat:last_context_updated" } });
           } catch (err) {
             console.warn("Unable to persist last usage for chat", id, err);
+            dataStream.write({ type: "data-log", data: { level: "warn", message: "chat:last_context_error", meta: String(err) } });
           }
         }
 
         // BACKGROUND ANALYSIS (after response sent)
         try {
+          dataStream.write({ type: "data-log", data: { level: "info", message: "insight:queued" } });
           const interpreterResult = await interpreterPromise;
 
           // Fire and forget with error boundary
@@ -461,10 +500,19 @@ export async function POST(request: Request) {
               : undefined,
             chatId: id,
             userId: session.user.id,
-          }).catch((error) => {
+          })
+            .then(() => {
+              try {
+                dataStream.write({ type: "data-log", data: { level: "info", message: "insight:done" } });
+              } catch {}
+            })
+            .catch((error) => {
             console.error("Background insight analysis failed:", error);
             // Swallow error - this is fire-and-forget background work
-          });
+              try {
+                dataStream.write({ type: "data-log", data: { level: "warn", message: "insight:error", meta: String(error) } });
+              } catch {}
+            });
         } catch (error) {
           console.error("Failed to await interpreter result:", error);
           // Continue - insight analysis is optional

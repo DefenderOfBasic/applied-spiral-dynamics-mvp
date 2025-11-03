@@ -37,19 +37,21 @@ const pixelExtractionSchema = z.object({
   }),
 });
 
-// No pixel extracted
-const noPixelSchema = z.object({
-  no_pixel: z.literal(true),
-  reason: z.string().describe("Why no pixel was extracted"),
-});
-
-// Union type for interpreter output
-export const interpreterOutputSchema = z.union([
-  pixelExtractionSchema,
-  noPixelSchema,
-]);
+// Unified object schema (top-level must be an object for JSON schema)
+export const interpreterOutputSchema = z
+  .object({
+    // Present when extraction succeeds
+    pixel: pixelExtractionSchema.shape.pixel.optional(),
+    // Present when no pixel extracted
+    no_pixel: z.boolean().optional(),
+    reason: z.string().optional().describe("Why no pixel was extracted"),
+  })
+  .describe(
+    "Either provide a 'pixel' object when a belief was extracted, or set 'no_pixel' to true with an optional 'reason' when none was extracted."
+  );
 
 export type InterpreterOutput = z.infer<typeof interpreterOutputSchema>;
-export type PixelExtraction = Extract<InterpreterOutput, { pixel: unknown }>;
-export type NoPixel = Extract<InterpreterOutput, { no_pixel: true }>;
+export type PixelExtraction = Required<Pick<InterpreterOutput, "pixel">> &
+  Omit<InterpreterOutput, "pixel">;
+export type NoPixel = { no_pixel: true; reason?: string };
 export type ColorStage = z.infer<typeof colorStageSchema>;

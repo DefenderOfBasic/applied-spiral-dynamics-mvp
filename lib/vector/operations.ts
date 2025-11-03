@@ -24,21 +24,14 @@ export async function retrieveRelevantPixels(
     includeArchived = false,
   } = options;
 
-  if (!process.env.CHROMA_URL) {
-    return [];
-  }
-
   try {
     const collection = await getOrCreatePixelCollection();
     const queryEmbedding = await generateEmbedding(query);
 
+    // Only filter on fields we actually store in Chroma metadata
+    // (userId, chatId, messageId, timestamp). Avoid invalid clauses.
     const whereFilter: Record<string, any> = {};
-    if (userId) {
-      whereFilter.userId = userId;
-    }
-    if (!includeArchived) {
-      whereFilter.archived = false;
-    }
+    if (userId) whereFilter.userId = userId;
 
     const results = await collection.query({
       queryEmbeddings: [queryEmbedding],
@@ -76,10 +69,6 @@ export async function upsertPixel(params: {
   metadata?: Record<string, string | number>;
 }): Promise<void> {
   const { id, content, userId, metadata = {} } = params;
-
-  if (!process.env.CHROMA_URL) {
-    return;
-  }
 
   try {
     const collection = await getOrCreatePixelCollection();

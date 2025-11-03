@@ -9,13 +9,12 @@ export type ChatModel = {
 export const chatModels: ChatModel[] = [
   {
     id: "chat-model",
-    name: "Grok Vision",
-    description: "Advanced multimodal model with vision and text capabilities",
+    name: "GPT-5",
+    description: "OpenAI's latest general model (no reasoning overhead)",
   },
   {
     id: "chat-model-reasoning",
-    name: "Grok Reasoning",
-    description:
-      "Uses advanced chain-of-thought reasoning for complex problems",
+    name: "GPT-5 Thinking",
+    description: "GPT-5 variant optimized for complex reasoning",
   },
 ];

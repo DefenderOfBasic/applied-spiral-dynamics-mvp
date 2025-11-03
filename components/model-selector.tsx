@@ -14,6 +14,7 @@ import { entitlementsByUserType } from "@/lib/ai/entitlements";
 import { chatModels } from "@/lib/ai/models";
 import { cn } from "@/lib/utils";
 import { CheckCircleFillIcon, ChevronDownIcon } from "./icons";
+import { createLogger } from "@/lib/logger";
 
 export function ModelSelector({
   session,
@@ -23,6 +24,7 @@ export function ModelSelector({
   session: Session;
   selectedModelId: string;
 } & React.ComponentProps<typeof Button>) {
+  const log = createLogger("model-selector");
   const [open, setOpen] = useState(false);
   const [optimisticModelId, setOptimisticModelId] =
     useOptimistic(selectedModelId);
@@ -79,6 +81,7 @@ export function ModelSelector({
                 startTransition(() => {
                   setOptimisticModelId(id);
                   saveChatModelAsCookie(id);
+                  log.info("model:select", { id });
                 });
               }}
             >
