@@ -86,6 +86,8 @@ export function getStreamContext() {
 }
 
 export async function POST(request: Request) {
+  // X_OMAR - this is running on the server, to http://localhost:3000/api/chat
+  //
   let requestBody: PostRequestBody;
 
   try {

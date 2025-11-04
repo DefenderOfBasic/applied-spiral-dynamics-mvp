@@ -85,10 +85,16 @@ export function Chat({
       api: "/api/chat",
       fetch: fetchWithErrorHandlers,
       prepareSendMessagesRequest(request) {
+        // const lastMessage = JSON.parse(JSON.stringify(request.messages.at(-1)));
+        // if (lastMessage && lastMessage.parts[0].text == "test") {
+        //   lastMessage.parts[0].text = "please repeat this message back: quack";
+        // }
+        // console.log("prepareSendMessagesRequest!!", { request, lastMessage });
+
         return {
           body: {
             id: request.id,
-            message: request.messages.at(-1),
+            message: request.messages.at(-1), //lastMessage,
             selectedChatModel: currentModelIdRef.current,
             selectedVisibilityType: visibilityType,
             ...request.body,
