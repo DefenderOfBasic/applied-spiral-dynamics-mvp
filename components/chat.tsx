@@ -3,7 +3,7 @@
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import useSWR, { useSWRConfig } from "swr";
 import { unstable_serialize } from "swr/infinite";
 import { ChatHeader } from "@/components/chat-header";
@@ -160,12 +160,50 @@ export function Chat({
     setMessages,
   });
 
+  const handleUpdatePixelMap = useCallback(
+    async (
+      setUpdateState: (value: "idle" | "updating" | "failed") => void,
+      userId?: string,
+      userEmail?: string | null
+    ) => {
+      setUpdateState("updating");
+      try {
+        const response = await fetch("/api", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chatId: id,
+            messages,
+            userId,
+            userEmail,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to update pixel map");
+        }
+
+        const data = await response.json();
+        console.log("Pixel map updated:", data);
+        console.log(JSON.stringify(data, null, 2));
+        setUpdateState("idle");
+      } catch (error) {
+        console.error("Error updating pixel map:", error);
+        setUpdateState("failed");
+      }
+    },
+    [id, messages]
+  );
+
   return (
     <>
       <div className="overscroll-behavior-contain flex h-dvh min-w-0 touch-pan-y flex-col bg-background">
         <ChatHeader
           chatId={id}
           isReadonly={isReadonly}
+          onUpdatePixelMap={handleUpdatePixelMap}
           selectedVisibilityType={initialVisibilityType}
         />
 

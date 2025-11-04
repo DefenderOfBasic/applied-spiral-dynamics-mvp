@@ -1,0 +1,2 @@
+Sample data file for pixel generation.
+

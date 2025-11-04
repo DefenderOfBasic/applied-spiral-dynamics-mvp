@@ -8,10 +8,13 @@ Deployed at: https://applied-spiral-dynamics-mvp.vercel.app/
 
 TODO:
 
-- Override the `sendMessage` flow (call the request directly so we can store things locally diff than what is sent?)
-- Intercept the incoming message
 - Add a vector DB (just use Chroma Cloud, or CloudFlare?)
-- Add a visualization?
+- Add a visualization
+  - ???
+- Generate a pixel from a conversation
+  - "Update pixel map" button, takes current conversation
+  - Run LLM with the custom instructions in the TXT file
+  -
 
 Questions:
 
@@ -19,7 +22,9 @@ Questions:
 
 Notes:
 
-- ***
+- Insight model prompt https://github.com/mettafive/applied-spiral-dynamics/blob/main/insight%20model.md
+- Spreadsheet of examples https://docs.google.com/spreadsheets/d/1jspvllJujDPTRtiZqkvsTFUZh21NwvXJYt_jbDSr694/edit?gid=0#gid=0
+-
 
 # Architecture
 
@@ -30,3 +35,8 @@ Notes:
   - https://ai-sdk.dev/docs/introduction
 - If you want to override the request, go to `prepareSendMessagesRequest`
 - `app/(chat)/api/chat/route.ts` is the Vercel server, which makes the request to OpenAI, through Vercel's gateway thing
+
+LLM settings
+
+- `lib/ai/providers.ts` defines which models are used for what
+- `handleUpdatePixelMap` in `chat.tsx`
