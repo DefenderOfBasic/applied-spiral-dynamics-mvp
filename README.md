@@ -11,10 +11,7 @@ TODO:
 - Add a vector DB (just use Chroma Cloud, or CloudFlare?)
 - Add a visualization
   - ???
-- Generate a pixel from a conversation
-  - "Update pixel map" button, takes current conversation
-  - Run LLM with the custom instructions in the TXT file
-  -
+- Change model to Claude?
 
 Questions:
 
