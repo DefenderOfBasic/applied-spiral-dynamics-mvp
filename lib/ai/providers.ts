@@ -13,6 +13,7 @@ export const myProvider = isTestEnvironment
         chatModel,
         reasoningModel,
         titleModel,
+        embeddingModel,
       } = require("./models.mock");
       return customProvider({
         languageModels: {
@@ -21,6 +22,9 @@ export const myProvider = isTestEnvironment
           "title-model": titleModel,
           "artifact-model": artifactModel,
         },
+      textEmbeddingModels: {
+        "embedding-model": embeddingModel,
+      },
       });
     })()
   : customProvider({
@@ -32,5 +36,8 @@ export const myProvider = isTestEnvironment
         }),
         "title-model": gateway.languageModel("xai/grok-2-1212"),
         "artifact-model": gateway.languageModel("xai/grok-2-1212"),
+      },
+      textEmbeddingModels: {
+        "embedding-model": gateway.textEmbeddingModel("openai/text-embedding-3-large"),
       },
     });

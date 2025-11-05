@@ -1,0 +1,137 @@
+import type { EmbeddingFunction } from "chromadb";
+import { ChromaClient, CloudClient } from "chromadb";
+import { myProvider } from "@/lib/ai/providers";
+
+// Custom embedding function that uses Vercel AI Gateway
+class AIGatewayEmbeddingFunction implements EmbeddingFunction {
+  async generate(texts: string[]): Promise<number[][]> {
+    const embeddingModel = myProvider.textEmbeddingModel("embedding-model");
+    const { embeddings } = await embeddingModel.doEmbed({
+      values: texts,
+    });
+    return embeddings;
+  }
+}
+
+const embeddingFunction = new AIGatewayEmbeddingFunction();
+
+let chromaClient: ChromaClient | null = null;
+let connectionAttempted = false;
+let connectionError: Error | null = null;
+
+export function getChromaClient(): ChromaClient {
+  if (!chromaClient && !connectionAttempted) {
+    connectionAttempted = true;
+
+    const chromaTenant = process.env.CHROMA_TENANT;
+    const chromaDatabase = process.env.CHROMA_DATABASE;
+    const chromaApiKey = process.env.CHROMA_API_KEY;
+
+    console.log({  chromaTenant,chromaDatabase,chromaApiKey })
+
+    try {
+        chromaClient = new CloudClient({
+          tenant: chromaTenant,
+          database: chromaDatabase,
+          apiKey: chromaApiKey,
+        });
+        console.log("✅ ChromaDB Cloud client initialized successfully");
+    } catch (error) {
+      connectionError =
+        error instanceof Error
+          ? error
+          : new Error("Failed to initialize ChromaDB client");
+      console.error("❌ ChromaDB initialization failed:", connectionError);
+      throw connectionError;
+    }
+  }
+
+  if (connectionError) {
+    throw connectionError;
+  }
+
+  if (!chromaClient) {
+    throw new Error("ChromaDB client not initialized");
+  }
+
+  return chromaClient;
+}
+
+export async function getOrCreatePixelCollection() {
+  const client = getChromaClient();
+
+  return await client.getOrCreateCollection({
+    name: "pixels",
+    metadata: {
+      "hnsw:space": "cosine",
+      "hnsw:construction_ef": 100,
+      "hnsw:search_ef": 100,
+    },
+  });
+}
+
+export async function getOrCreatePixelCollectionForUser(userId: string) {
+  const client = getChromaClient();
+
+  return await client.getOrCreateCollection({
+    name: `pixels-${userId}`,
+    embeddingFunction,
+    metadata: {
+      "hnsw:space": "cosine",
+      "hnsw:construction_ef": 100,
+      "hnsw:search_ef": 100,
+    },
+  });
+}
+
+export async function getAllPixelsForUser(userId: string) {
+  try {
+    console.log("1")
+    const collection = await getOrCreatePixelCollectionForUser(userId);
+    
+    // Get all documents from the collection (no filter means get all)
+    console.log("2")
+    const results = await collection.get();
+    
+    return results;
+  } catch (error) {
+    console.error("ChromaDB error in getAllPixelsForUser:", error);
+    // Check if it's a ChromaDB permission error
+    if (error instanceof Error && error.message.includes("permission")) {
+      throw new Error(
+        "ChromaDB permission error: Please check your CHROMA_API_KEY, CHROMA_TENANT, and CHROMA_DATABASE environment variables."
+      );
+    }
+    throw error;
+  }
+}
+
+export async function storePixel({
+  userId,
+  documentText,
+  metadata,
+  documentId,
+}: {
+  userId: string;
+  documentText: string;
+  metadata: Record<string, string | number | boolean>;
+  documentId: string;
+}) {
+  // Generate embedding using AI SDK
+  const embeddingModel = myProvider.textEmbeddingModel("embedding-model");
+  const { embeddings } = await embeddingModel.doEmbed({
+    values: [documentText],
+  });
+  const embedding = embeddings[0];
+
+  // Get user's collection
+  const collection = await getOrCreatePixelCollectionForUser(userId);
+
+  // Add document with embedding
+  await collection.add({
+    ids: [documentId],
+    embeddings: [embedding],
+    documents: [documentText],
+    metadatas: [metadata],
+  });
+}

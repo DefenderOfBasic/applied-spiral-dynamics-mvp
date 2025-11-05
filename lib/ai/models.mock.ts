@@ -1,4 +1,4 @@
-import type { LanguageModel } from "ai";
+import type { EmbeddingModel, LanguageModel } from "ai";
 
 const createMockModel = (): LanguageModel => {
   return {
@@ -32,7 +32,25 @@ const createMockModel = (): LanguageModel => {
   } as unknown as LanguageModel;
 };
 
+const createMockEmbeddingModel = (): EmbeddingModel => {
+  return {
+    specificationVersion: "v1",
+    provider: "mock",
+    modelId: "mock-embedding-model",
+    maxEmbeddingsPerCall: 1,
+    doEmbed: async () => ({
+      rawCall: { rawPrompt: null, rawSettings: {} },
+      embeddings: [
+        // Return a mock 1536-dimensional vector (typical for text-embedding-3-large)
+        new Array(1536).fill(0).map(() => Math.random() * 2 - 1),
+      ],
+      usage: { inputTokens: 10, totalTokens: 10 },
+    }),
+  } as unknown as EmbeddingModel;
+};
+
 export const chatModel = createMockModel();
 export const reasoningModel = createMockModel();
 export const titleModel = createMockModel();
 export const artifactModel = createMockModel();
+export const embeddingModel = createMockEmbeddingModel();
