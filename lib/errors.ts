@@ -16,7 +16,8 @@ export type Surface =
   | "vote"
   | "document"
   | "suggestions"
-  | "activate_gateway";
+  | "activate_gateway"
+  | "pixels";
 
 export type ErrorCode = `${ErrorType}:${Surface}`;
 
@@ -33,6 +34,7 @@ export const visibilityBySurface: Record<Surface, ErrorVisibility> = {
   document: "response",
   suggestions: "response",
   activate_gateway: "response",
+  pixels: "response",
 };
 
 export class ChatSDKError extends Error {
@@ -89,6 +91,8 @@ export function getMessageByErrorCode(errorCode: ErrorCode): string {
 
     case "unauthorized:auth":
       return "You need to sign in before continuing.";
+    case "unauthorized:pixels":
+      return "You need to sign in to view your stored pixels. Please sign in and try again.";
     case "forbidden:auth":
       return "Your account does not have access to this feature.";
 
