@@ -1,0 +1,1 @@
+ALTER TABLE "Message_v2" ADD COLUMN "processed" boolean DEFAULT false NOT NULL;

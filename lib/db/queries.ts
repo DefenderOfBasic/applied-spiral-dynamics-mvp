@@ -591,3 +591,71 @@ export async function getStreamIdsByChatId({ chatId }: { chatId: string }) {
     );
   }
 }
+
+export async function markMessageAsProcessed({ id }: { id: string }) {
+  try {
+    return await db
+      .update(message)
+      .set({ processed: true })
+      .where(eq(message.id, id))
+      .returning();
+  } catch (_error) {
+    throw new ChatSDKError(
+      "bad_request:database",
+      "Failed to mark message as processed"
+    );
+  }
+}
+
+export async function markMessagesAsProcessed({
+  messageIds,
+}: {
+  messageIds: string[];
+}) {
+  try {
+    if (messageIds.length === 0) {
+      return [];
+    }
+    return await db
+      .update(message)
+      .set({ processed: true })
+      .where(inArray(message.id, messageIds))
+      .returning();
+  } catch (_error) {
+    throw new ChatSDKError(
+      "bad_request:database",
+      "Failed to mark messages as processed"
+    );
+  }
+}
+
+export async function getUnprocessedMessages({
+  limit,
+  chatId,
+}: {
+  limit?: number;
+  chatId?: string;
+}) {
+  try {
+    const whereCondition = chatId
+      ? and(eq(message.processed, false), eq(message.chatId, chatId))
+      : eq(message.processed, false);
+
+    let query = db
+      .select()
+      .from(message)
+      .where(whereCondition)
+      .orderBy(asc(message.createdAt));
+
+    if (limit) {
+      query = query.limit(limit);
+    }
+
+    return await query;
+  } catch (_error) {
+    throw new ChatSDKError(
+      "bad_request:database",
+      "Failed to get unprocessed messages"
+    );
+  }
+}

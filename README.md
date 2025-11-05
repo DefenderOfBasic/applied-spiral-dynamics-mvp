@@ -32,6 +32,8 @@ Notes:
   - https://ai-sdk.dev/docs/introduction
 - If you want to override the request, go to `prepareSendMessagesRequest`
 - `app/(chat)/api/chat/route.ts` is the Vercel server, which makes the request to OpenAI, through Vercel's gateway thing
+- `app/(pixel-generation)/api/route.ts` is where the pixel generation happens
+  - called from `handleUpdatePixelMap` in `chat.tsx`
 
 LLM settings
 

@@ -168,14 +168,29 @@ export function Chat({
     ) => {
       setUpdateState("updating");
       try {
-        const response = await fetch("/api", {
+        // Filter to only unprocessed messages
+        const unprocessedMessages = messages
+          .filter((msg) => !msg.metadata?.processed)
+          .map((msg) => ({
+            ...msg,
+            processed: false,
+          }));
+
+        // If no unprocessed messages, we're done
+        if (unprocessedMessages.length === 0) {
+          console.log("Nothing to process! all done")
+          setUpdateState("idle");
+          return;
+        }
+
+        const response = await fetch("/api/pixel-generation", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
             chatId: id,
-            messages,
+            messages: unprocessedMessages,
             userId,
             userEmail,
           }),
@@ -188,6 +203,14 @@ export function Chat({
         const data = await response.json();
         console.log("Pixel map updated:", data);
         console.log(JSON.stringify(data, null, 2));
+
+        // Refresh messages from database to get updated processed state
+        const messagesResponse = await fetch(`/api/chat/${id}/messages`);
+        if (messagesResponse.ok) {
+          const freshMessages = await messagesResponse.json();
+          setMessages(freshMessages);
+        }
+
         setUpdateState("idle");
       } catch (error) {
         console.error("Error updating pixel map:", error);

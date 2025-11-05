@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { generateText } from "ai";
 import { myProvider } from "@/lib/ai/providers";
+import { markMessagesAsProcessed } from "@/lib/db/queries";
 
 export async function POST(request: Request) {
   const { chatId, messages, userId, userEmail } = await request.json();
@@ -42,6 +43,16 @@ export async function POST(request: Request) {
     console.log(text);
 
     const result = JSON.parse(text);
+
+    // Mark all messages as processed (they're all unprocessed by this point)
+    const messageIds =
+      messages
+        ?.map((msg: { id: string }) => msg.id)
+        .filter(Boolean) ?? [];
+
+    if (messageIds.length > 0) {
+      await markMessagesAsProcessed({ messageIds });
+    }
 
     return Response.json({ status: "done", result });
   } catch (error) {

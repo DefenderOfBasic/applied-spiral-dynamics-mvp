@@ -2,6 +2,7 @@
 import type { UseChatHelpers } from "@ai-sdk/react";
 import equal from "fast-deep-equal";
 import { motion } from "framer-motion";
+import { CheckCircle2, Clock } from "lucide-react";
 import { memo, useState } from "react";
 import type { Vote } from "@/lib/db/schema";
 import type { ChatMessage } from "@/lib/types";
@@ -50,6 +51,7 @@ const PurePreviewMessage = ({
     (part) => part.type === "file"
   );
 
+  
   useDataStream();
 
   return (
@@ -122,8 +124,11 @@ const PurePreviewMessage = ({
 
             if (type === "text") {
               if (mode === "view") {
+                const isProcessed = message.metadata?.processed ?? false;
+                console.log({ isProcessed })
+
                 return (
-                  <div key={key}>
+                  <div key={key} className="flex items-center gap-2">
                     <MessageContent
                       className={cn({
                         "w-fit break-words rounded-2xl px-3 py-2 text-right text-white":
@@ -140,6 +145,17 @@ const PurePreviewMessage = ({
                     >
                       <Response>{sanitizeText(part.text)}</Response>
                     </MessageContent>
+                    {isProcessed ? (
+                      <CheckCircle2
+                        className="size-3 shrink-0 text-green-600 dark:text-green-500"
+                        title="Processed"
+                      />
+                    ) : (
+                      <Clock
+                        className="size-3 shrink-0 text-muted-foreground opacity-50"
+                        title="Not processed"
+                      />
+                    )}
                   </div>
                 );
               }
