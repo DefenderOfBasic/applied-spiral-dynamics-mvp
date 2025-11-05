@@ -641,14 +641,14 @@ export async function getUnprocessedMessages({
       ? and(eq(message.processed, false), eq(message.chatId, chatId))
       : eq(message.processed, false);
 
-    let query = db
+    const query = db
       .select()
       .from(message)
       .where(whereCondition)
       .orderBy(asc(message.createdAt));
 
     if (limit) {
-      query = query.limit(limit);
+      return await query.limit(limit);
     }
 
     return await query;

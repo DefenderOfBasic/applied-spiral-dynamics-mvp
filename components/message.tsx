@@ -148,12 +148,10 @@ const PurePreviewMessage = ({
                     {isProcessed ? (
                       <CheckCircle2
                         className="size-3 shrink-0 text-green-600 dark:text-green-500"
-                        title="Processed"
                       />
                     ) : (
                       <Clock
                         className="size-3 shrink-0 text-muted-foreground opacity-50"
-                        title="Not processed"
                       />
                     )}
                   </div>

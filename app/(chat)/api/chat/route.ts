@@ -170,6 +170,7 @@ export async function POST(request: Request) {
           parts: message.parts,
           attachments: [],
           createdAt: new Date(),
+          processed: false,
         },
       ],
     });
@@ -261,6 +262,7 @@ export async function POST(request: Request) {
             createdAt: new Date(),
             attachments: [],
             chatId: id,
+            processed: false,
           })),
         });
 
