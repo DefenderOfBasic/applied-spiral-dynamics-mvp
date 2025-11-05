@@ -3,6 +3,8 @@ import { join } from "node:path";
 import { generateText } from "ai";
 import { myProvider } from "@/lib/ai/providers";
 import { markMessagesAsProcessed } from "@/lib/db/queries";
+import { storePixel } from "@/lib/chroma/client";
+import { generateUUID } from "@/lib/utils";
 
 export async function POST(request: Request) {
   const { chatId, messages, userId, userEmail } = await request.json();
@@ -44,7 +46,43 @@ export async function POST(request: Request) {
 
     const result = JSON.parse(text);
 
-    // Mark all messages as processed (they're all unprocessed by this point)
+    // If a pixel was found, store it in ChromaDB
+    // This must succeed before marking messages as processed
+    if (!result.no_pixel && result.pixel) {
+      // Format the text for embedding: "context: ...\nstatement: ..."
+      const documentText = `context: ${result.pixel.context}\nstatement: ${result.pixel.statement}`;
+
+      // Prepare metadata
+      const metadata: Record<string, string | number | boolean> = {
+        statement: result.pixel.statement,
+        context: result.pixel.context,
+        explanation: result.pixel.explanation,
+        color_stage: JSON.stringify(result.pixel.color_stage),
+        confidence_score: result.pixel.confidence_score,
+        too_nuanced: result.pixel.too_nuanced,
+        absolute_thinking: result.pixel.absolute_thinking,
+        chatId: chatId || "",
+        userEmail: userEmail || "",
+        timestamp: new Date().toISOString(),
+      };
+
+      // Generate unique ID for this pixel document
+      const documentId = generateUUID();
+
+      // Store pixel in ChromaDB - if this fails, the request will fail
+      // and messages won't be marked as processed, allowing retry
+      await storePixel({
+        userId,
+        documentText,
+        metadata,
+        documentId,
+      });
+
+      console.log("✅ Pixel stored in ChromaDB:", documentId);
+    }
+
+    // Only mark messages as processed if pixel storage succeeded (or no pixel was found)
+    // If storage failed, the error above will prevent this from running
     const messageIds =
       messages
         ?.map((msg: { id: string }) => msg.id)
