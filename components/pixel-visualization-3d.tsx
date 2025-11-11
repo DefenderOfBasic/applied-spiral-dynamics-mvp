@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Html } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import useSWR from "swr";
 import { fetcher } from "@/lib/utils";
 import {
@@ -219,24 +219,6 @@ function PixelBox({
           transparent
         />
       </mesh>
-      {(isHovered || isSelected) && (
-        <Html
-          distanceFactor={10}
-          position={[0, boxSize + 0.2, 0]}
-          style={{ pointerEvents: "none" }}
-        >
-          <div className="bg-black/90 text-white text-xs p-2 rounded max-w-xs pointer-events-none">
-            {pixel.colorStage &&
-              getTopColorsByAbsoluteValue(pixel.colorStage, 2).map(
-                ([color, value]) => (
-                  <div key={color} className="mb-0.5">
-                    {color}: {Number(value).toFixed(2)}
-                  </div>
-                )
-              )}
-          </div>
-        </Html>
-      )}
     </group>
   );
 }
@@ -413,6 +395,20 @@ export function PixelVisualization3D({
             selectedPixel={selectedPixel}
           />
         </Canvas>
+        {hoveredPixel && !selectedPixel && (
+          <div className="absolute top-4 left-4 z-10 pointer-events-none">
+            <div className="bg-black/90 text-white text-xs p-2 rounded w-48">
+              {hoveredPixel.colorStage &&
+                getTopColorsByAbsoluteValue(hoveredPixel.colorStage, 2).map(
+                  ([color, value]) => (
+                    <div key={color} className="mb-0.5 last:mb-0">
+                      {color}: {Number(value).toFixed(2)}
+                    </div>
+                  )
+                )}
+            </div>
+          </div>
+        )}
         {selectedPixel && !compact && (
           <div className="absolute top-4 right-4 w-80 max-h-[80vh] overflow-y-auto z-10">
             <Card>

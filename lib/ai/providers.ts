@@ -29,7 +29,7 @@ export const myProvider = isTestEnvironment
     })()
   : customProvider({
       languageModels: { // https://vercel.com/omar-shehatas-projects/~/ai/model-list
-        "chat-model": gateway.languageModel("anthropic/claude-sonnet-4.5"),
+        "chat-model": gateway.languageModel("anthropic/claude-haiku-4.5"),
         "chat-model-reasoning": wrapLanguageModel({
           model: gateway.languageModel("xai/grok-3-mini"),
           middleware: extractReasoningMiddleware({ tagName: "think" }),
