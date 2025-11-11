@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import useSWR from "swr";
@@ -251,6 +251,144 @@ function PixelScene({
   );
 }
 
+type DualRangeSliderProps = {
+  min: number;
+  max: number;
+  start: number;
+  end: number;
+  onStartChange: (value: number) => void;
+  onEndChange: (value: number) => void;
+  onRangeChange: (start: number, end: number) => void;
+  formatValue: (value: number) => string;
+};
+
+function DualRangeSlider({
+  min,
+  max,
+  start,
+  end,
+  onStartChange,
+  onEndChange,
+  onRangeChange,
+  formatValue,
+}: DualRangeSliderProps) {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [activeHandle, setActiveHandle] = useState<"start" | "end" | "range" | null>(null);
+  const [dragOffset, setDragOffset] = useState(0);
+
+  const getValueFromX = useCallback((clientX: number) => {
+    if (!sliderRef.current) return min;
+    const rect = sliderRef.current.getBoundingClientRect();
+    const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    return Math.round(min + percent * (max - min));
+  }, [min, max]);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    if (!sliderRef.current) return;
+    
+    const clickValue = getValueFromX(e.clientX);
+    const startPercent = ((start - min) / (max - min)) * 100;
+    const endPercent = ((end - min) / (max - min)) * 100;
+    const clickPercent = ((clickValue - min) / (max - min)) * 100;
+    
+    // Check if clicking near start handle (within 4% of slider width)
+    const startDist = Math.abs(clickPercent - startPercent);
+    const endDist = Math.abs(clickPercent - endPercent);
+    
+    if (startDist < 4 && startDist <= endDist) {
+      setActiveHandle("start");
+      setDragOffset(0);
+    } else if (endDist < 4) {
+      setActiveHandle("end");
+      setDragOffset(0);
+    } else if (clickPercent > startPercent && clickPercent < endPercent) {
+      setActiveHandle("range");
+      setDragOffset(clickValue - start);
+    }
+  }, [start, end, min, max, getValueFromX]);
+
+  useEffect(() => {
+    if (!activeHandle) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!sliderRef.current) return;
+      
+      const mouseValue = getValueFromX(e.clientX);
+      
+      if (activeHandle === "start") {
+        const clamped = Math.max(min, Math.min(end, mouseValue));
+        onStartChange(clamped);
+      } else if (activeHandle === "end") {
+        const clamped = Math.max(start, Math.min(max, mouseValue));
+        onEndChange(clamped);
+      } else if (activeHandle === "range") {
+        const rangeWidth = end - start;
+        const newStart = mouseValue - dragOffset;
+        const clampedStart = Math.max(min, Math.min(max - rangeWidth, newStart));
+        const clampedEnd = clampedStart + rangeWidth;
+        if (clampedEnd <= max) {
+          onRangeChange(clampedStart, clampedEnd);
+        }
+      }
+    };
+
+    const handleMouseUp = () => {
+      setActiveHandle(null);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+    
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [activeHandle, dragOffset, start, end, min, max, onStartChange, onEndChange, onRangeChange, getValueFromX]);
+
+  const startPercent = ((start - min) / (max - min)) * 100;
+  const endPercent = ((end - min) / (max - min)) * 100;
+
+  return (
+    <div className="relative w-full">
+      <div
+        ref={sliderRef}
+        className="relative h-6 w-full cursor-pointer"
+        onMouseDown={handleMouseDown}
+      >
+        {/* Background track */}
+        <div className="absolute top-1/2 left-0 right-0 h-1.5 -translate-y-1/2 bg-muted rounded-full" />
+        
+        {/* Active range */}
+        <div
+          className="absolute top-1/2 h-1.5 -translate-y-1/2 bg-primary rounded-full"
+          style={{
+            left: `${startPercent}%`,
+            width: `${endPercent - startPercent}%`,
+          }}
+        />
+        
+        {/* Start handle */}
+        <div
+          className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full border-2 border-background shadow-sm"
+          style={{ left: `${startPercent}%` }}
+        />
+        
+        {/* End handle */}
+        <div
+          className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full border-2 border-background shadow-sm"
+          style={{ left: `${endPercent}%` }}
+        />
+      </div>
+      
+      {/* Labels */}
+      <div className="flex items-center justify-between mt-2 text-xs text-muted-foreground">
+        <span>{formatValue(start)}</span>
+        <span>{formatValue(end)}</span>
+      </div>
+    </div>
+  );
+}
+
 export function PixelVisualization3D({
   className,
   compact = false,
@@ -264,9 +402,14 @@ export function PixelVisualization3D({
   );
 
   const [processedPixels, setProcessedPixels] = useState<ProcessedPixel[]>([]);
+  const [allProcessedPixels, setAllProcessedPixels] = useState<ProcessedPixel[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [hoveredPixel, setHoveredPixel] = useState<ProcessedPixel | null>(null);
   const [selectedPixel, setSelectedPixel] = useState<ProcessedPixel | null>(null);
+  
+  // Time range state
+  const [timeRange, setTimeRange] = useState<{ start: number; end: number } | null>(null);
+  const [absoluteTimeRange, setAbsoluteTimeRange] = useState<{ min: number; max: number } | null>(null);
 
   useEffect(() => {
     if (!pixelData?.embeddings || pixelData.embeddings.length === 0) {
@@ -326,14 +469,56 @@ export function PixelVisualization3D({
         };
       });
 
-      setProcessedPixels(processed);
+      setAllProcessedPixels(processed);
+      
+      // Calculate time range from all pixels
+      const timestamps = processed
+        .map((p) => {
+          const ts = p.metadata?.timestamp;
+          if (!ts) return null;
+          return new Date(ts).getTime();
+        })
+        .filter((ts): ts is number => ts !== null);
+      
+      if (timestamps.length > 0) {
+        const minTime = Math.min(...timestamps);
+        const maxTime = Math.max(...timestamps);
+        // Store absolute time range for slider bounds
+        setAbsoluteTimeRange({ min: minTime, max: maxTime });
+        // Initialize time range to show all pixels
+        setTimeRange({ start: minTime, end: maxTime });
+      }
+      // processedPixels will be set by the filtering effect
     } catch (error) {
       console.error("Error processing pixels:", error);
       setProcessedPixels([]);
+      setAllProcessedPixels([]);
+      setTimeRange(null);
+      setAbsoluteTimeRange(null);
     } finally {
       setIsProcessing(false);
     }
   }, [pixelData, compact]);
+  
+  // Filter pixels based on time range
+  useEffect(() => {
+    if (!timeRange || allProcessedPixels.length === 0) {
+      // If no time range, show all pixels
+      if (allProcessedPixels.length > 0) {
+        setProcessedPixels(allProcessedPixels);
+      }
+      return;
+    }
+    
+    const filtered = allProcessedPixels.filter((pixel) => {
+      const ts = pixel.metadata?.timestamp;
+      if (!ts) return false;
+      const pixelTime = new Date(ts).getTime();
+      return pixelTime >= timeRange.start && pixelTime <= timeRange.end;
+    });
+    
+    setProcessedPixels(filtered);
+  }, [timeRange, allProcessedPixels]);
 
   if (isLoading || isProcessing) {
     return (
@@ -374,6 +559,29 @@ export function PixelVisualization3D({
 console.log(hoveredPixel.metadata)
   }
   
+
+  const formatTime = (timestamp: number) => {
+    return new Date(timestamp).toLocaleString();
+  };
+
+  const handleStartTimeChange = (value: number) => {
+    if (timeRange && value <= timeRange.end) {
+      setTimeRange({ ...timeRange, start: value });
+    }
+  };
+
+  const handleEndTimeChange = (value: number) => {
+    if (timeRange && value >= timeRange.start) {
+      setTimeRange({ ...timeRange, end: value });
+    }
+  };
+
+  const handleRangeChange = (newStart: number, newEnd: number) => {
+    if (absoluteTimeRange) {
+      // The DualRangeSlider already ensures bounds, so we can set directly
+      setTimeRange({ start: newStart, end: newEnd });
+    }
+  };
 
   return (
     <div className={className} style={{ minHeight: compact ? "240px" : "400px" }}>
@@ -517,6 +725,28 @@ console.log(hoveredPixel.metadata)
                 )}
               </CardContent>
             </Card>
+          </div>
+        )}
+        {!compact && timeRange && absoluteTimeRange && (
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 bg-background/90 backdrop-blur-sm p-4 rounded-lg border shadow-lg min-w-[600px] max-w-[90vw]">
+            <div className="space-y-3">
+              <div className="flex items-center justify-between text-sm">
+                <span className="font-semibold">Time Range Filter</span>
+                <span className="text-muted-foreground">
+                  {processedPixels.length} of {allProcessedPixels.length} pixels
+                </span>
+              </div>
+              <DualRangeSlider
+                min={absoluteTimeRange.min}
+                max={absoluteTimeRange.max}
+                start={timeRange.start}
+                end={timeRange.end}
+                onStartChange={handleStartTimeChange}
+                onEndChange={handleEndTimeChange}
+                onRangeChange={handleRangeChange}
+                formatValue={formatTime}
+              />
+            </div>
           </div>
         )}
       </div>

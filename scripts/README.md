@@ -26,6 +26,7 @@ Each pixel object should have:
 
 ```json
 {
+  "timestamp": "2024-01-15T10:30:00.000Z",
   "pixel": {
     "statement": "The belief statement",
     "context": "Context about when/why this belief was expressed",
@@ -57,6 +58,7 @@ Each pixel object should have:
 
 ### Optional Fields
 
+- `timestamp`: ISO 8601 timestamp string (e.g., `"2024-01-15T10:30:00.000Z"`). If not provided, uses the current time. This allows you to fake/inject custom timestamps for the pixels.
 - `text`: The text that will be embedded. If not provided, it will be auto-constructed as `"context: {context}\nstatement: {statement}"`
 - `pixel.explanation`: Explanation text (defaults to empty string)
 - `pixel.confidence_score`: Confidence score (defaults to 0)

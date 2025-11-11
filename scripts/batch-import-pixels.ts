@@ -29,6 +29,7 @@ config({
 
 type PixelData = {
   text?: string; // Optional - will be auto-constructed from context + statement if not provided
+  timestamp?: string; // Optional - ISO string timestamp. If not provided, uses current time
   pixel: {
     statement: string;
     context: string;
@@ -79,6 +80,19 @@ async function batchImportPixels(userId: string, jsonFilePath: string) {
         // Auto-construct from context + statement if text not provided
         const documentText = pixelData.text ?? `context: ${pixel.context}\nstatement: ${pixel.statement}`;
 
+        // Validate timestamp if provided
+        let timestamp: string;
+        if (pixelData.timestamp) {
+          // Validate it's a valid ISO string
+          const date = new Date(pixelData.timestamp);
+          if (Number.isNaN(date.getTime())) {
+            throw new Error(`Invalid timestamp format: ${pixelData.timestamp}. Must be ISO 8601 format (e.g., "2024-01-15T10:30:00.000Z")`);
+          }
+          timestamp = date.toISOString();
+        } else {
+          timestamp = new Date().toISOString();
+        }
+
         // Prepare metadata (same structure as in pixel-generation route)
         const metadata: Record<string, string | number | boolean> = {
           statement: pixel.statement,
@@ -90,7 +104,7 @@ async function batchImportPixels(userId: string, jsonFilePath: string) {
           absolute_thinking: pixel.absolute_thinking ?? false,
           chatId: "", // Empty for batch imports
           userEmail: "", // Empty for batch imports
-          timestamp: new Date().toISOString(),
+          timestamp,
         };
 
         // Generate unique ID for this pixel document

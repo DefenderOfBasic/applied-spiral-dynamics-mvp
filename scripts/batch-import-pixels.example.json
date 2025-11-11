@@ -1,5 +1,6 @@
 [
   {
+    "timestamp": "2024-01-15T10:30:00.000Z",
     "pixel": {
       "statement": "I hate how everyone expects you to respond to work emails at 11pm",
       "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time.",
@@ -22,6 +23,7 @@
     }
   },
   {
+    "timestamp": "2024-01-20T14:45:00.000Z",
     "pixel": {
       "statement": "I care too much about others' opinions of me",
       "context": "User reflecting on feedback from their coach about people-pleasing patterns. They're aware this is limiting them but haven't broken the pattern yet. The weight of others' judgment shapes their decisions daily.",
