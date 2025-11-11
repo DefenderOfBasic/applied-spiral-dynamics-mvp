@@ -16,6 +16,9 @@ export default async function PixelsPage() {
   let pixels;
   let error: string | null = null;
 
+  // Log user ID for batch import reference
+  console.log("👤 User ID for batch import:", session.user.id);
+
   try {
     const result = await getAllPixelsForUser(session.user.id);
     pixels = result;
@@ -31,6 +34,15 @@ export default async function PixelsPage() {
         <p className="text-muted-foreground">
           All stored belief pixels from your conversations
         </p>
+        <div className="mt-2 p-3 bg-muted rounded-md">
+          <p className="text-xs text-muted-foreground">
+            <span className="font-semibold">User ID:</span>{" "}
+            <span className="font-mono text-xs">{session.user.id}</span>
+            <span className="text-muted-foreground ml-2 text-xs">
+              (Use this for batch imports)
+            </span>
+          </p>
+        </div>
       </div>
 
       {error && (

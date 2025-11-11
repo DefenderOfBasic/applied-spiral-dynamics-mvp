@@ -211,10 +211,8 @@ function PixelBox({
     >
       <mesh>
         <boxGeometry args={[boxSize, boxSize, boxSize]} />
-        <meshStandardMaterial
+        <meshBasicMaterial
           color={pixel.color}
-          emissive={pixel.color}
-          emissiveIntensity={isSelected ? 0.7 : isHovered ? 0.5 : 0.2}
           opacity={isSelected ? 1 : isHovered ? 1 : 0.8}
           transparent
         />
@@ -238,10 +236,6 @@ function PixelScene({
 }) {
   return (
     <>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
-      <pointLight position={[-10, -10, -10]} intensity={0.3} />
-      
       {pixels.map((pixel) => (
         <PixelBox
           key={pixel.id}

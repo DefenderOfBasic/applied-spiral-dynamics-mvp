@@ -1,0 +1,47 @@
+[
+  {
+    "pixel": {
+      "statement": "I hate how everyone expects you to respond to work emails at 11pm",
+      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time.",
+      "explanation": "Green value of boundaries and work-life balance, with resistance to Orange constant-availability culture. Absolute thinking present ('everyone'). They're carrying tension between wanting boundaries and feeling professional pressure.",
+      "color_stage": {
+        "beige": 0.0,
+        "purple": 0.0,
+        "red": 1.0,
+        "blue": 0.0,
+        "orange": 0.0,
+        "green": 0.0,
+        "yellow": 0.0,
+        "turquoise": 0.0,
+        "coral": 0.0,
+        "teal": 0.0
+      },
+      "confidence_score": 0.6,
+      "too_nuanced": false,
+      "absolute_thinking": true
+    }
+  },
+  {
+    "pixel": {
+      "statement": "I care too much about others' opinions of me",
+      "context": "User reflecting on feedback from their coach about people-pleasing patterns. They're aware this is limiting them but haven't broken the pattern yet. The weight of others' judgment shapes their decisions daily.",
+      "explanation": "Green people-pleasing pattern with emerging Orange individuation. Not absolute thinking (they're aware and questioning it). Moderate confidence because they're in process of recognizing this, not fully convinced they can change it yet.",
+      "color_stage": {
+        "beige": 0.0,
+        "purple": 0.0,
+        "red": 0.0,
+        "blue": 0.0,
+        "orange": 0.2,
+        "green": 0.4,
+        "yellow": 1.0,
+        "turquoise": 0.0,
+        "coral": 0.0,
+        "teal": 0.0
+      },
+      "confidence_score": 0.5,
+      "too_nuanced": false,
+      "absolute_thinking": false
+    }
+  }
+]
+
