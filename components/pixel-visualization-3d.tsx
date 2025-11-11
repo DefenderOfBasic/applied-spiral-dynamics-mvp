@@ -376,6 +376,11 @@ export function PixelVisualization3D({
     );
   }
 
+  if (hoveredPixel){
+console.log(hoveredPixel.metadata)
+  }
+  
+
   return (
     <div className={className} style={{ minHeight: compact ? "240px" : "400px" }}>
       <div className="relative w-full h-full">
@@ -398,6 +403,13 @@ export function PixelVisualization3D({
         {hoveredPixel && !selectedPixel && (
           <div className="absolute top-4 left-4 z-10 pointer-events-none">
             <div className="bg-black/90 text-white text-xs p-2 rounded w-48">
+              {hoveredPixel.metadata?.context && (
+                <div className="mb-2 pb-2 border-b border-white/20">
+                  {hoveredPixel.metadata.context.length > 240
+                    ? `${hoveredPixel.metadata.context.slice(0, 50)}...`
+                    : hoveredPixel.metadata.context}
+                </div>
+              )}
               {hoveredPixel.colorStage &&
                 getTopColorsByAbsoluteValue(hoveredPixel.colorStage, 2).map(
                   ([color, value]) => (
