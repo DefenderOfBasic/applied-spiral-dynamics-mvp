@@ -86,12 +86,13 @@ export async function getOrCreatePixelCollectionForUser(userId: string) {
 
 export async function getAllPixelsForUser(userId: string) {
   try {
-    console.log("1")
     const collection = await getOrCreatePixelCollectionForUser(userId);
     
-    // Get all documents from the collection (no filter means get all)
-    console.log("2")
-    const results = await collection.get();
+    // Get all documents from the collection including embeddings
+    // This returns: { ids, embeddings, documents, metadatas }
+    const results = await collection.get({
+      include: ["embeddings", "documents", "metadatas"],
+    });
     
     return results;
   } catch (error) {

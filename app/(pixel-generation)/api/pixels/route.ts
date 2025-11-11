@@ -14,6 +14,11 @@ export async function GET() {
   }
 
   try {
+    // getAllPixelsForUser returns ChromaDB results including:
+    // - ids: string[]
+    // - embeddings: number[][] (required for 3D visualization)
+    // - documents: string[]
+    // - metadatas: Record<string, any>[]
     const pixels = await getAllPixelsForUser(session.user.id);
     return Response.json(pixels);
   } catch (error) {

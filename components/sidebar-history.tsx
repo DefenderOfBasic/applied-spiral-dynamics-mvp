@@ -27,6 +27,7 @@ import type { Chat } from "@/lib/db/schema";
 import { fetcher } from "@/lib/utils";
 import { LoaderIcon } from "./icons";
 import { ChatItem } from "./sidebar-history-item";
+import { PixelVisualization3D } from "./pixel-visualization-3d";
 
 type GroupedChats = {
   today: Chat[];
@@ -212,15 +213,20 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
           <div className="flex h-full flex-col">
             <div
               aria-label="pixel map"
-              className="mx-2 mb-2 min-h-60 rounded-md border border-zinc-200 p-3 text-sm text-zinc-500 dark:border-zinc-800"
+              className="mx-2 mb-2 min-h-60 rounded-md border border-zinc-200 dark:border-zinc-800 overflow-hidden"
               role="region"
             >
-              {/* Persistent box area */}
+              <PixelVisualization3D compact className="w-full h-full" />
             </div>
 
-            <center>
-              <a href="#" style={{color: 'gray'}}>(open in new window)</a>
-            </center>
+            <div className="flex justify-center mb-2">
+              <a
+                href="/pixels/visualization"
+                className="text-xs text-muted-foreground hover:text-foreground"
+              >
+                (open in new window)
+              </a>
+            </div>
 
             <hr className="mx-2 my-3 border-zinc-200 border-t dark:border-zinc-800" />
 

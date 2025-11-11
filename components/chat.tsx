@@ -211,6 +211,9 @@ export function Chat({
           setMessages(freshMessages);
         }
 
+        // Refresh pixel visualization data
+        mutate("/api/pixels");
+
         setUpdateState("idle");
       } catch (error) {
         console.error("Error updating pixel map:", error);
