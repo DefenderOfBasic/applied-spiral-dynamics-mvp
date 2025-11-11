@@ -212,11 +212,15 @@ export function SidebarHistory({ user }: { user: User | undefined }) {
           <div className="flex h-full flex-col">
             <div
               aria-label="pixel map"
-              className="mx-2 mb-2 min-h-40 rounded-md border border-zinc-200 p-3 text-sm text-zinc-500 dark:border-zinc-800"
+              className="mx-2 mb-2 min-h-60 rounded-md border border-zinc-200 p-3 text-sm text-zinc-500 dark:border-zinc-800"
               role="region"
             >
               {/* Persistent box area */}
             </div>
+
+            <center>
+              <a href="#" style={{color: 'gray'}}>(open in new window)</a>
+            </center>
 
             <hr className="mx-2 my-3 border-zinc-200 border-t dark:border-zinc-800" />
 
