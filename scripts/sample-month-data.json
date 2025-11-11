@@ -2,9 +2,9 @@
   {
     "timestamp": "2024-01-01T00:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 404c90f3-b30d-4ef5-b69c-63faeecfae55",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 404c90f3-b30d-4ef5-b69c-63faeecfae55",
-      "explanation": "Reflection on community theme showing beige stage characteristics.",
+      "statement": "I don't know how I'm going to pay rent this month",
+      "context": "User focused on basic survival needs. They're in a state of immediate crisis and can't think beyond the present moment.",
+      "explanation": "Reflection on work theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
         "purple": 0,
@@ -25,8 +25,8 @@
   {
     "timestamp": "2024-01-02T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? fdc0452f-6859-49f1-9a9a-1841fe88f150",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. fdc0452f-6859-49f1-9a9a-1841fe88f150",
+      "statement": "I can't think about the future when I'm just trying to survive today",
+      "context": "User in pure survival mode, unable to plan or think beyond immediate needs.",
       "explanation": "Reflection on romantic theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
@@ -48,8 +48,8 @@
   {
     "timestamp": "2024-01-03T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? 939cf0ca-71ea-42ae-9ba7-f4ae70cce7aa",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. 939cf0ca-71ea-42ae-9ba7-f4ae70cce7aa",
+      "statement": "I feel completely alone and disconnected from everyone",
+      "context": "User at the most basic level of social connection - feeling isolated and without community.",
       "explanation": "Reflection on community theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
@@ -71,9 +71,9 @@
   {
     "timestamp": "2024-01-04T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional d511a240-1ad4-452e-8e80-5527bffc5703",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. d511a240-1ad4-452e-8e80-5527bffc5703",
-      "explanation": "Reflection on romantic theme showing beige stage characteristics.",
+      "statement": "I don't know how I'm going to pay rent this month",
+      "context": "User focused on basic survival needs. They're in a state of immediate crisis and can't think beyond the present moment.",
+      "explanation": "Reflection on work theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
         "purple": 0,
@@ -94,8 +94,8 @@
   {
     "timestamp": "2024-01-05T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional a0c9e7db-cdeb-4404-99d4-124102d727ed",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. a0c9e7db-cdeb-4404-99d4-124102d727ed",
+      "statement": "I can't think about the future when I'm just trying to survive today",
+      "context": "User in pure survival mode, unable to plan or think beyond immediate needs.",
       "explanation": "Reflection on romantic theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
@@ -117,9 +117,9 @@
   {
     "timestamp": "2024-01-06T00:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions 098a2b01-eb91-4042-a114-3524dfab03cf",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. 098a2b01-eb91-4042-a114-3524dfab03cf",
-      "explanation": "Reflection on romantic theme showing beige stage characteristics.",
+      "statement": "I have no one to turn to when things get really bad",
+      "context": "User feeling completely isolated and without support systems. They're in a state of basic survival.",
+      "explanation": "Reflection on community theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
         "purple": 0,
@@ -140,9 +140,9 @@
   {
     "timestamp": "2024-01-07T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy 37c9cd3e-7cb7-43fa-b9d5-d55be5269d8a",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. 37c9cd3e-7cb7-43fa-b9d5-d55be5269d8a",
-      "explanation": "Reflection on romantic theme showing beige stage characteristics.",
+      "statement": "Every day feels like a struggle just to keep going",
+      "context": "User operating at the most basic level of existence. They're focused purely on survival.",
+      "explanation": "Reflection on work theme showing beige stage characteristics.",
       "color_stage": {
         "beige": 1,
         "purple": 0,
@@ -163,9 +163,9 @@
   {
     "timestamp": "2024-01-08T00:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups 56dc8e58-643a-485b-9c4a-e83f601e77ee",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. 56dc8e58-643a-485b-9c4a-e83f601e77ee",
-      "explanation": "Reflection on community theme showing beige → purple stage characteristics.",
+      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions",
+      "context": "User seeking approval and belonging in their relationship. They're adapting to fit in.",
+      "explanation": "Reflection on romantic theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
         "purple": 0.7,
@@ -186,9 +186,9 @@
   {
     "timestamp": "2024-01-09T00:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions 8f4ef4de-e2c4-4e8f-bac0-10d74b1b0132",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. 8f4ef4de-e2c4-4e8f-bac0-10d74b1b0132",
-      "explanation": "Reflection on romantic theme showing beige → purple stage characteristics.",
+      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up?",
+      "context": "User taking on responsibility to maintain the group. They want to participate in community but feel burdened.",
+      "explanation": "Reflection on community theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
         "purple": 0.7,
@@ -209,8 +209,8 @@
   {
     "timestamp": "2024-01-10T00:00:00.000Z",
     "pixel": {
-      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features 33d1ff9b-6303-4f31-abbd-a8e6cdc93d51",
-      "context": "User feeling undervalued and stuck with unglamorous work. They want growth opportunities but feel overlooked. 33d1ff9b-6303-4f31-abbd-a8e6cdc93d51",
+      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features",
+      "context": "User feeling like they don't belong in the important work. They want to be part of the team's core activities.",
       "explanation": "Reflection on work theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
@@ -232,8 +232,8 @@
   {
     "timestamp": "2024-01-11T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional e912ea50-132f-4e1e-bca3-5cea0450e03a",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. e912ea50-132f-4e1e-bca3-5cea0450e03a",
+      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions",
+      "context": "User seeking approval and belonging in their relationship. They're adapting to fit in.",
       "explanation": "Reflection on romantic theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
@@ -255,9 +255,9 @@
   {
     "timestamp": "2024-01-12T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional ed0a9348-cfc3-47ed-bb96-c8fbab575208",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. ed0a9348-cfc3-47ed-bb96-c8fbab575208",
-      "explanation": "Reflection on romantic theme showing beige → purple stage characteristics.",
+      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up?",
+      "context": "User taking on responsibility to maintain the group. They want to participate in community but feel burdened.",
+      "explanation": "Reflection on community theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
         "purple": 0.7,
@@ -278,9 +278,9 @@
   {
     "timestamp": "2024-01-13T00:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted a14f6514-a568-4cae-92c2-3e12b9adf426",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. a14f6514-a568-4cae-92c2-3e12b9adf426",
-      "explanation": "Reflection on community theme showing beige → purple stage characteristics.",
+      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features",
+      "context": "User feeling like they don't belong in the important work. They want to be part of the team's core activities.",
+      "explanation": "Reflection on work theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
         "purple": 0.7,
@@ -301,9 +301,9 @@
   {
     "timestamp": "2024-01-14T00:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy d1414f9a-78ce-4174-a857-0420cee96a49",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. d1414f9a-78ce-4174-a857-0420cee96a49",
-      "explanation": "Reflection on work theme showing beige → purple stage characteristics.",
+      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions",
+      "context": "User seeking approval and belonging in their relationship. They're adapting to fit in.",
+      "explanation": "Reflection on romantic theme showing beige → purple stage characteristics.",
       "color_stage": {
         "beige": 0.3,
         "purple": 0.7,
@@ -324,8 +324,8 @@
   {
     "timestamp": "2024-01-15T00:00:00.000Z",
     "pixel": {
-      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind 9845811f-c0e2-47f8-9544-ad872ddacd53",
-      "context": "User comparing themselves to friends and feeling inadequate. They're struggling with their own path while seeing others succeed. 9845811f-c0e2-47f8-9544-ad872ddacd53",
+      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up?",
+      "context": "User taking on responsibility to maintain the group. They want to participate in community but feel burdened.",
       "explanation": "Reflection on community theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -347,9 +347,9 @@
   {
     "timestamp": "2024-01-16T00:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 85217c2c-e91a-4711-8a14-2ed038bafe5e",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 85217c2c-e91a-4711-8a14-2ed038bafe5e",
-      "explanation": "Reflection on romantic theme showing purple stage characteristics.",
+      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features",
+      "context": "User feeling like they don't belong in the important work. They want to be part of the team's core activities.",
+      "explanation": "Reflection on work theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 1,
@@ -370,9 +370,9 @@
   {
     "timestamp": "2024-01-17T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? c852d046-d6cc-49e9-a68a-76d44a22e094",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. c852d046-d6cc-49e9-a68a-76d44a22e094",
-      "explanation": "Reflection on community theme showing purple stage characteristics.",
+      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions",
+      "context": "User seeking approval and belonging in their relationship. They're adapting to fit in.",
+      "explanation": "Reflection on romantic theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 1,
@@ -393,8 +393,8 @@
   {
     "timestamp": "2024-01-18T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 15f56548-17fd-40e1-b1e3-12fca710b2bd",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 15f56548-17fd-40e1-b1e3-12fca710b2bd",
+      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up?",
+      "context": "User taking on responsibility to maintain the group. They want to participate in community but feel burdened.",
       "explanation": "Reflection on community theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -416,8 +416,8 @@
   {
     "timestamp": "2024-01-19T00:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 5457b701-db61-4dcc-a8ea-20a384fa9cd1",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 5457b701-db61-4dcc-a8ea-20a384fa9cd1",
+      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features",
+      "context": "User feeling like they don't belong in the important work. They want to be part of the team's core activities.",
       "explanation": "Reflection on work theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -439,8 +439,8 @@
   {
     "timestamp": "2024-01-20T00:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 4b67aab7-d669-4622-8fc0-53e6361422e4",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 4b67aab7-d669-4622-8fc0-53e6361422e4",
+      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy",
+      "context": "User suppressing their needs to maintain belonging in the relationship. They value the connection but at the cost of authenticity.",
       "explanation": "Reflection on romantic theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -462,9 +462,9 @@
   {
     "timestamp": "2024-01-21T00:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 0f8152be-7c86-4487-b292-e8712c1238d2",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 0f8152be-7c86-4487-b292-e8712c1238d2",
-      "explanation": "Reflection on work theme showing purple stage characteristics.",
+      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups",
+      "context": "User seeking belonging and connection. They want to be part of a group but feel excluded.",
+      "explanation": "Reflection on community theme showing purple stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 1,
@@ -485,8 +485,8 @@
   {
     "timestamp": "2024-01-22T00:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 8ce5beff-4dc5-421e-ae00-9ebe6268d342",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 8ce5beff-4dc5-421e-ae00-9ebe6268d342",
+      "statement": "I hate how everyone expects you to respond to work emails at 11pm",
+      "context": "User expressing frustration with power dynamics. They value boundaries but feel pressure from authority.",
       "explanation": "Reflection on work theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -508,9 +508,9 @@
   {
     "timestamp": "2024-01-23T00:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 6deea839-3d78-4bea-9a00-5014f14c047b",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 6deea839-3d78-4bea-9a00-5014f14c047b",
-      "explanation": "Reflection on work theme showing purple → red stage characteristics.",
+      "statement": "We keep having the same argument over and over. I don't know how to break this cycle",
+      "context": "User stuck in power struggles in their relationship. They recognize the pattern but feel powerless to change it.",
+      "explanation": "Reflection on romantic theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0.3,
@@ -531,8 +531,8 @@
   {
     "timestamp": "2024-01-24T00:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups ac2f9d70-508d-45b0-9711-2b17f94f4af0",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. ac2f9d70-508d-45b0-9711-2b17f94f4af0",
+      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice?",
+      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing.",
       "explanation": "Reflection on community theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -554,9 +554,9 @@
   {
     "timestamp": "2024-01-25T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? 751176fb-67ec-48ee-a20e-f1f0f3b71c2e",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. 751176fb-67ec-48ee-a20e-f1f0f3b71c2e",
-      "explanation": "Reflection on romantic theme showing purple → red stage characteristics.",
+      "statement": "I hate how everyone expects you to respond to work emails at 11pm",
+      "context": "User expressing frustration with power dynamics. They value boundaries but feel pressure from authority.",
+      "explanation": "Reflection on work theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0.3,
@@ -577,9 +577,9 @@
   {
     "timestamp": "2024-01-26T00:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted a9185b5a-54fb-4faa-bfdb-9ece33d33b13",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. a9185b5a-54fb-4faa-bfdb-9ece33d33b13",
-      "explanation": "Reflection on community theme showing purple → red stage characteristics.",
+      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up?",
+      "context": "User feeling like they carry the emotional labor. They want mutual engagement but feel like they're doing all the work.",
+      "explanation": "Reflection on romantic theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0.3,
@@ -600,8 +600,8 @@
   {
     "timestamp": "2024-01-27T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? f8f442bf-6e81-4dfc-a19c-7dfb54ac263a",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. f8f442bf-6e81-4dfc-a19c-7dfb54ac263a",
+      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice?",
+      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing.",
       "explanation": "Reflection on community theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -623,9 +623,9 @@
   {
     "timestamp": "2024-01-28T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 5dc333ca-33b2-4637-bb8c-cb652c30a99d",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 5dc333ca-33b2-4637-bb8c-cb652c30a99d",
-      "explanation": "Reflection on community theme showing purple → red stage characteristics.",
+      "statement": "I hate how everyone expects you to respond to work emails at 11pm",
+      "context": "User expressing frustration with power dynamics. They value boundaries but feel pressure from authority.",
+      "explanation": "Reflection on work theme showing purple → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0.3,
@@ -646,9 +646,9 @@
   {
     "timestamp": "2024-01-29T00:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm 368083be-df5c-420a-bff8-3823154b88a1",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. 368083be-df5c-420a-bff8-3823154b88a1",
-      "explanation": "Reflection on work theme showing red stage characteristics.",
+      "statement": "We keep having the same argument over and over. I don't know how to break this cycle",
+      "context": "User stuck in power struggles in their relationship. They recognize the pattern but feel powerless to change it.",
+      "explanation": "Reflection on romantic theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -669,9 +669,9 @@
   {
     "timestamp": "2024-01-30T00:00:00.000Z",
     "pixel": {
-      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it 4395e4fa-4d3a-42cd-9867-a77ec1a62694",
-      "context": "User concerned about technical debt and long-term maintainability. They see problems others ignore and feel responsible for fixing them. 4395e4fa-4d3a-42cd-9867-a77ec1a62694",
-      "explanation": "Reflection on work theme showing red stage characteristics.",
+      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice?",
+      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing.",
+      "explanation": "Reflection on community theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -692,9 +692,9 @@
   {
     "timestamp": "2024-01-31T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? f5dadc76-e8dc-4133-bdc9-a918dcf38d30",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. f5dadc76-e8dc-4133-bdc9-a918dcf38d30",
-      "explanation": "Reflection on community theme showing red stage characteristics.",
+      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy",
+      "context": "User frustrated with lack of control and constant changes. They feel their time and effort is being wasted by poor management.",
+      "explanation": "Reflection on work theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -715,8 +715,8 @@
   {
     "timestamp": "2024-02-01T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? 4ecfac46-d66b-4115-9a2a-3de1abdf8d90",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. 4ecfac46-d66b-4115-9a2a-3de1abdf8d90",
+      "statement": "We keep having the same argument over and over. I don't know how to break this cycle",
+      "context": "User stuck in power struggles in their relationship. They recognize the pattern but feel powerless to change it.",
       "explanation": "Reflection on romantic theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -738,9 +738,9 @@
   {
     "timestamp": "2024-02-02T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional cbaf9da8-ebb8-4b53-b8ad-d474c5f0061a",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. cbaf9da8-ebb8-4b53-b8ad-d474c5f0061a",
-      "explanation": "Reflection on romantic theme showing red stage characteristics.",
+      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice?",
+      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing.",
+      "explanation": "Reflection on community theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -761,9 +761,9 @@
   {
     "timestamp": "2024-02-03T00:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 1d5a7fe7-81a1-4557-bd1b-d48c4ae63ee6",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 1d5a7fe7-81a1-4557-bd1b-d48c4ae63ee6",
-      "explanation": "Reflection on romantic theme showing red stage characteristics.",
+      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy",
+      "context": "User frustrated with lack of control and constant changes. They feel their time and effort is being wasted by poor management.",
+      "explanation": "Reflection on work theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -784,8 +784,8 @@
   {
     "timestamp": "2024-02-04T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy 1737a90a-931c-47d4-8a3b-69b8f31d07a9",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. 1737a90a-931c-47d4-8a3b-69b8f31d07a9",
+      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging",
+      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner.",
       "explanation": "Reflection on romantic theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -807,9 +807,9 @@
   {
     "timestamp": "2024-02-05T00:00:00.000Z",
     "pixel": {
-      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it 958c67c7-d968-4008-b599-e70b5fe38786",
-      "context": "User concerned about technical debt and long-term maintainability. They see problems others ignore and feel responsible for fixing them. 958c67c7-d968-4008-b599-e70b5fe38786",
-      "explanation": "Reflection on work theme showing red → blue stage characteristics.",
+      "statement": "I want to be more intentional about who I spend time with and how I invest in friendships",
+      "context": "User seeking to create more structure and intentionality in their social connections.",
+      "explanation": "Reflection on community theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -830,9 +830,9 @@
   {
     "timestamp": "2024-02-06T00:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together ef3a13af-454d-46aa-82b6-9b4cb24180e1",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. ef3a13af-454d-46aa-82b6-9b4cb24180e1",
-      "explanation": "Reflection on community theme showing red → blue stage characteristics.",
+      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive",
+      "context": "User frustrated with meeting culture that prevents deep work. They want structure but feel pulled in too many directions.",
+      "explanation": "Reflection on work theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -853,8 +853,8 @@
   {
     "timestamp": "2024-02-07T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? d019d652-9f0a-4205-bf9b-a85d2f4bdb01",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. d019d652-9f0a-4205-bf9b-a85d2f4bdb01",
+      "statement": "We used to have so much fun together, but now everything feels transactional",
+      "context": "User noticing the relationship has lost its spark. They miss the connection but don't know how to get it back within the current structure.",
       "explanation": "Reflection on romantic theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -876,8 +876,8 @@
   {
     "timestamp": "2024-02-08T00:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups 4d383097-f701-4be9-b175-2e5a081a8b40",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. 4d383097-f701-4be9-b175-2e5a081a8b40",
+      "statement": "I want to be more intentional about who I spend time with and how I invest in friendships",
+      "context": "User seeking to create more structure and intentionality in their social connections.",
       "explanation": "Reflection on community theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -899,8 +899,8 @@
   {
     "timestamp": "2024-02-09T00:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 339a90d4-f689-46f7-9bb5-67b4198b7112",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 339a90d4-f689-46f7-9bb5-67b4198b7112",
+      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive",
+      "context": "User frustrated with meeting culture that prevents deep work. They want structure but feel pulled in too many directions.",
       "explanation": "Reflection on work theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -922,8 +922,8 @@
   {
     "timestamp": "2024-02-10T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy b866be21-f931-4b94-bdde-ab341e4bf765",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. b866be21-f931-4b94-bdde-ab341e4bf765",
+      "statement": "We used to have so much fun together, but now everything feels transactional",
+      "context": "User noticing the relationship has lost its spark. They miss the connection but don't know how to get it back within the current structure.",
       "explanation": "Reflection on romantic theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -945,8 +945,8 @@
   {
     "timestamp": "2024-02-11T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 701ec607-d8ea-4b04-b317-cd091e87a1c3",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 701ec607-d8ea-4b04-b317-cd091e87a1c3",
+      "statement": "I want to be more intentional about who I spend time with and how I invest in friendships",
+      "context": "User seeking to create more structure and intentionality in their social connections.",
       "explanation": "Reflection on community theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -968,8 +968,8 @@
   {
     "timestamp": "2024-02-12T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality 367a7473-0596-4e2c-bd2d-5ee2fbce8e44",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. 367a7473-0596-4e2c-bd2d-5ee2fbce8e44",
+      "statement": "I need to establish better boundaries at work to maintain my work-life balance",
+      "context": "User recognizing the need for structure and rules to protect their time and energy.",
       "explanation": "Reflection on work theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -991,9 +991,9 @@
   {
     "timestamp": "2024-02-13T00:00:00.000Z",
     "pixel": {
-      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind 622c9e5c-7ef2-4879-85c8-c893fb04e429",
-      "context": "User comparing themselves to friends and feeling inadequate. They're struggling with their own path while seeing others succeed. 622c9e5c-7ef2-4879-85c8-c893fb04e429",
-      "explanation": "Reflection on community theme showing blue stage characteristics.",
+      "statement": "I'm trying to create more consistent routines in my relationship to improve communication",
+      "context": "User seeking structure and predictability in their relationship to create stability.",
+      "explanation": "Reflection on romantic theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1014,9 +1014,9 @@
   {
     "timestamp": "2024-02-14T00:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 0d0c0e3c-d884-45e8-a557-22ec04711656",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 0d0c0e3c-d884-45e8-a557-22ec04711656",
-      "explanation": "Reflection on romantic theme showing blue stage characteristics.",
+      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind",
+      "context": "User comparing themselves to others and feeling inadequate. They're struggling with their own path while seeing others succeed.",
+      "explanation": "Reflection on community theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1037,9 +1037,9 @@
   {
     "timestamp": "2024-02-15T00:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted 1fafa56f-20fe-4bf3-80b6-a0cc5793ea37",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. 1fafa56f-20fe-4bf3-80b6-a0cc5793ea37",
-      "explanation": "Reflection on community theme showing blue stage characteristics.",
+      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive",
+      "context": "User frustrated with meeting culture that prevents deep work. They want structure but feel pulled in too many directions.",
+      "explanation": "Reflection on work theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1060,9 +1060,9 @@
   {
     "timestamp": "2024-02-16T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality 2e5d8971-d673-460b-a22a-9804e2d0f4a2",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. 2e5d8971-d673-460b-a22a-9804e2d0f4a2",
-      "explanation": "Reflection on work theme showing blue stage characteristics.",
+      "statement": "I'm trying to create more consistent routines in my relationship to improve communication",
+      "context": "User seeking structure and predictability in their relationship to create stability.",
+      "explanation": "Reflection on romantic theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1083,9 +1083,9 @@
   {
     "timestamp": "2024-02-17T00:00:00.000Z",
     "pixel": {
-      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features 9881f041-9926-4a63-b224-cf1ad4426c17",
-      "context": "User feeling undervalued and stuck with unglamorous work. They want growth opportunities but feel overlooked. 9881f041-9926-4a63-b224-cf1ad4426c17",
-      "explanation": "Reflection on work theme showing blue stage characteristics.",
+      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind",
+      "context": "User comparing themselves to others and feeling inadequate. They're struggling with their own path while seeing others succeed.",
+      "explanation": "Reflection on community theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1106,8 +1106,8 @@
   {
     "timestamp": "2024-02-18T00:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive b6fdfacf-8fbc-43ba-9b87-8b2b617b6aa6",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. b6fdfacf-8fbc-43ba-9b87-8b2b617b6aa6",
+      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive",
+      "context": "User frustrated with meeting culture that prevents deep work. They want structure but feel pulled in too many directions.",
       "explanation": "Reflection on work theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1129,8 +1129,8 @@
   {
     "timestamp": "2024-02-19T00:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging c068c945-dc72-4c1c-830e-8bc4402034d3",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. c068c945-dc72-4c1c-830e-8bc4402034d3",
+      "statement": "I'm comparing my relationship progress to my friends' relationships and feeling behind",
+      "context": "User measuring their relationship success against others. They're achievement-focused in their personal life.",
       "explanation": "Reflection on romantic theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1152,9 +1152,9 @@
   {
     "timestamp": "2024-02-20T00:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions ed931a02-bdf2-4f2b-a96e-e036ce006934",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. ed931a02-bdf2-4f2b-a96e-e036ce006934",
-      "explanation": "Reflection on romantic theme showing blue → orange stage characteristics.",
+      "statement": "I want to be seen as a leader in my friend group and take on more responsibility",
+      "context": "User seeking recognition and status within their community. They want to achieve a position of influence.",
+      "explanation": "Reflection on community theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1175,8 +1175,8 @@
   {
     "timestamp": "2024-02-21T00:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm 632a1a2e-6609-4101-b480-fb3148a36e05",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. 632a1a2e-6609-4101-b480-fb3148a36e05",
+      "statement": "I want to get promoted this year and I'm not sure if I'm doing enough to stand out",
+      "context": "User focused on achievement and career advancement. They're competitive and goal-oriented.",
       "explanation": "Reflection on work theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1198,8 +1198,8 @@
   {
     "timestamp": "2024-02-22T00:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional 3ab51397-e43c-4b67-882b-37153d16ce09",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. 3ab51397-e43c-4b67-882b-37153d16ce09",
+      "statement": "I'm working on improving my communication skills to be more effective in my relationship",
+      "context": "User focused on self-improvement and achieving better relationship outcomes.",
       "explanation": "Reflection on romantic theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1221,9 +1221,9 @@
   {
     "timestamp": "2024-02-23T00:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm 29fbe92d-026d-478d-8974-709769c2eda2",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. 29fbe92d-026d-478d-8974-709769c2eda2",
-      "explanation": "Reflection on work theme showing blue → orange stage characteristics.",
+      "statement": "I want to build a network of high-achieving friends who can help me grow professionally",
+      "context": "User seeking strategic connections for career advancement. They're focused on building valuable relationships.",
+      "explanation": "Reflection on community theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1244,9 +1244,9 @@
   {
     "timestamp": "2024-02-24T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? 37be4c43-85a9-4028-89a6-722b6f050770",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. 37be4c43-85a9-4028-89a6-722b6f050770",
-      "explanation": "Reflection on romantic theme showing blue → orange stage characteristics.",
+      "statement": "I want to get promoted this year and I'm not sure if I'm doing enough to stand out",
+      "context": "User focused on achievement and career advancement. They're competitive and goal-oriented.",
+      "explanation": "Reflection on work theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1267,9 +1267,9 @@
   {
     "timestamp": "2024-02-25T00:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted 55bf93c0-552e-4fb3-9377-920bbd6c6fb4",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. 55bf93c0-552e-4fb3-9377-920bbd6c6fb4",
-      "explanation": "Reflection on community theme showing blue → orange stage characteristics.",
+      "statement": "I'm comparing my relationship progress to my friends' relationships and feeling behind",
+      "context": "User measuring their relationship success against others. They're achievement-focused in their personal life.",
+      "explanation": "Reflection on romantic theme showing blue → orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1290,8 +1290,8 @@
   {
     "timestamp": "2024-02-26T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 0071ee1f-75a1-4fbe-8a95-e4f9e0b528e7",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 0071ee1f-75a1-4fbe-8a95-e4f9e0b528e7",
+      "statement": "I want to be seen as a leader in my friend group and take on more responsibility",
+      "context": "User seeking recognition and status within their community. They want to achieve a position of influence.",
       "explanation": "Reflection on community theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1313,9 +1313,9 @@
   {
     "timestamp": "2024-02-27T00:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 02361ac4-b58c-424f-9e94-c8f1fda27b52",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 02361ac4-b58c-424f-9e94-c8f1fda27b52",
-      "explanation": "Reflection on romantic theme showing orange stage characteristics.",
+      "statement": "I need to optimize my workflow to be more productive and get better results",
+      "context": "User focused on efficiency and results. They want to achieve more and be more successful.",
+      "explanation": "Reflection on work theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1336,9 +1336,9 @@
   {
     "timestamp": "2024-02-28T00:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm 53a76766-7685-4526-a497-51a06bc33e07",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. 53a76766-7685-4526-a497-51a06bc33e07",
-      "explanation": "Reflection on work theme showing orange stage characteristics.",
+      "statement": "I'm working on improving my communication skills to be more effective in my relationship",
+      "context": "User focused on self-improvement and achieving better relationship outcomes.",
+      "explanation": "Reflection on romantic theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1359,8 +1359,8 @@
   {
     "timestamp": "2024-02-29T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 58f6e4e5-d6b5-4360-ac99-65a52f4802a7",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 58f6e4e5-d6b5-4360-ac99-65a52f4802a7",
+      "statement": "I want to build a network of high-achieving friends who can help me grow professionally",
+      "context": "User seeking strategic connections for career advancement. They're focused on building valuable relationships.",
       "explanation": "Reflection on community theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1382,9 +1382,9 @@
   {
     "timestamp": "2024-03-01T00:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? b0530d40-13dc-4fda-b964-377a811c2608",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. b0530d40-13dc-4fda-b964-377a811c2608",
-      "explanation": "Reflection on community theme showing orange stage characteristics.",
+      "statement": "I need to optimize my workflow to be more productive and get better results",
+      "context": "User focused on efficiency and results. They want to achieve more and be more successful.",
+      "explanation": "Reflection on work theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1405,8 +1405,8 @@
   {
     "timestamp": "2024-03-02T00:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions 7d465e64-0045-4f5b-8527-a1e927bdf2fd",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. 7d465e64-0045-4f5b-8527-a1e927bdf2fd",
+      "statement": "I'm working on improving my communication skills to be more effective in my relationship",
+      "context": "User focused on self-improvement and achieving better relationship outcomes.",
       "explanation": "Reflection on romantic theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1428,8 +1428,8 @@
   {
     "timestamp": "2024-03-03T00:00:00.000Z",
     "pixel": {
-      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind 097faab7-896c-418a-8ed1-68713a43bc01",
-      "context": "User comparing themselves to friends and feeling inadequate. They're struggling with their own path while seeing others succeed. 097faab7-896c-418a-8ed1-68713a43bc01",
+      "statement": "I want to be seen as a leader in my friend group and take on more responsibility",
+      "context": "User seeking recognition and status within their community. They want to achieve a position of influence.",
       "explanation": "Reflection on community theme showing orange stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1451,8 +1451,8 @@
   {
     "timestamp": "2024-03-04T00:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality 0ac4a631-9cab-4e41-baea-cc8c9ff602f6",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. 0ac4a631-9cab-4e41-baea-cc8c9ff602f6",
+      "statement": "I want to create a more collaborative and inclusive work environment where everyone feels heard",
+      "context": "User focused on harmony and consensus. They value equality and want everyone to feel included.",
       "explanation": "Reflection on work theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1474,8 +1474,8 @@
   {
     "timestamp": "2024-03-05T00:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 22c193bd-d794-4c51-b487-fd41b1dc4b3e",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 22c193bd-d794-4c51-b487-fd41b1dc4b3e",
+      "statement": "I'm learning to listen more deeply to my partner's needs and find ways we can both feel fulfilled",
+      "context": "User focused on mutual understanding and harmony in their relationship. They value equality and consensus.",
       "explanation": "Reflection on romantic theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1497,8 +1497,8 @@
   {
     "timestamp": "2024-03-06T00:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted b48d28a8-4ef7-4b93-a705-acacad485759",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. b48d28a8-4ef7-4b93-a705-acacad485759",
+      "statement": "I'm trying to be more present and authentic in my friendships, focusing on deep connection over surface-level interactions",
+      "context": "User focused on authentic, meaningful connections. They value depth and emotional intimacy.",
       "explanation": "Reflection on community theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1520,8 +1520,8 @@
   {
     "timestamp": "2024-03-07T00:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 79a2e00a-e6cb-4017-8fd8-c7a57d61b063",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 79a2e00a-e6cb-4017-8fd8-c7a57d61b063",
+      "statement": "I want to contribute to a work culture that values people's wellbeing as much as productivity",
+      "context": "User focused on creating harmonious work environments that prioritize people over profit.",
       "explanation": "Reflection on work theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1543,8 +1543,8 @@
   {
     "timestamp": "2024-03-08T00:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging a2d6d06b-aa24-4a92-9375-016b5f61d7ad",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. a2d6d06b-aa24-4a92-9375-016b5f61d7ad",
+      "statement": "I'm learning to listen more deeply to my partner's needs and find ways we can both feel fulfilled",
+      "context": "User focused on mutual understanding and harmony in their relationship. They value equality and consensus.",
       "explanation": "Reflection on romantic theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1566,8 +1566,8 @@
   {
     "timestamp": "2024-03-09T00:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups 95781fd9-28f3-43eb-adca-fd474c60927a",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. 95781fd9-28f3-43eb-adca-fd474c60927a",
+      "statement": "I'm trying to be more present and authentic in my friendships, focusing on deep connection over surface-level interactions",
+      "context": "User focused on authentic, meaningful connections. They value depth and emotional intimacy.",
       "explanation": "Reflection on community theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1589,8 +1589,8 @@
   {
     "timestamp": "2024-03-10T00:00:00.000Z",
     "pixel": {
-      "statement": "I keep getting assigned the boring maintenance tasks while others get the interesting new features 0e65fb99-57dc-4bc8-8b7b-40fb7ebae287",
-      "context": "User feeling undervalued and stuck with unglamorous work. They want growth opportunities but feel overlooked. 0e65fb99-57dc-4bc8-8b7b-40fb7ebae287",
+      "statement": "I'm working on being more empathetic and understanding different perspectives at work",
+      "context": "User focused on emotional intelligence and understanding others. They value harmony over competition.",
       "explanation": "Reflection on work theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1612,9 +1612,9 @@
   {
     "timestamp": "2024-03-10T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? f58f0b47-bb83-4b59-bef7-b8ead64d1a5e",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. f58f0b47-bb83-4b59-bef7-b8ead64d1a5e",
-      "explanation": "Reflection on community theme showing green stage characteristics.",
+      "statement": "I'm learning to listen more deeply to my partner's needs and find ways we can both feel fulfilled",
+      "context": "User focused on mutual understanding and harmony in their relationship. They value equality and consensus.",
+      "explanation": "Reflection on romantic theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1635,9 +1635,9 @@
   {
     "timestamp": "2024-03-11T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging ee9c8e69-b8c9-4822-9185-1e28a851793f",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. ee9c8e69-b8c9-4822-9185-1e28a851793f",
-      "explanation": "Reflection on romantic theme showing green stage characteristics.",
+      "statement": "I'm trying to be more present and authentic in my friendships, focusing on deep connection over surface-level interactions",
+      "context": "User focused on authentic, meaningful connections. They value depth and emotional intimacy.",
+      "explanation": "Reflection on community theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1658,9 +1658,9 @@
   {
     "timestamp": "2024-03-12T23:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 06ec6030-071f-4b1c-b8eb-96a151fcc1b7",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 06ec6030-071f-4b1c-b8eb-96a151fcc1b7",
-      "explanation": "Reflection on romantic theme showing green stage characteristics.",
+      "statement": "I'm working on being more empathetic and understanding different perspectives at work",
+      "context": "User focused on emotional intelligence and understanding others. They value harmony over competition.",
+      "explanation": "Reflection on work theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1681,8 +1681,8 @@
   {
     "timestamp": "2024-03-13T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy bed764d0-918c-4dd5-856c-bd9b6d5edea7",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. bed764d0-918c-4dd5-856c-bd9b6d5edea7",
+      "statement": "I want to create more balance and equality in how we share responsibilities in our relationship",
+      "context": "User focused on creating equitable partnerships. They value consensus and mutual support.",
       "explanation": "Reflection on romantic theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1704,9 +1704,9 @@
   {
     "timestamp": "2024-03-14T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy 51aab0e9-a1f7-4ca7-8e0f-6bce83766482",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. 51aab0e9-a1f7-4ca7-8e0f-6bce83766482",
-      "explanation": "Reflection on romantic theme showing green stage characteristics.",
+      "statement": "I want to build a community where everyone feels supported and can be their authentic selves",
+      "context": "User focused on creating inclusive, supportive communities. They value harmony and authenticity.",
+      "explanation": "Reflection on community theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1727,8 +1727,8 @@
   {
     "timestamp": "2024-03-15T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality 0a02e0b3-f04f-4cd3-9e03-40b84935a063",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. 0a02e0b3-f04f-4cd3-9e03-40b84935a063",
+      "statement": "I want to contribute to a work culture that values people's wellbeing as much as productivity",
+      "context": "User focused on creating harmonious work environments that prioritize people over profit.",
       "explanation": "Reflection on work theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1750,9 +1750,9 @@
   {
     "timestamp": "2024-03-16T23:00:00.000Z",
     "pixel": {
-      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it 894c5964-181c-4d88-99a9-dc4196b5d95b",
-      "context": "User concerned about technical debt and long-term maintainability. They see problems others ignore and feel responsible for fixing them. 894c5964-181c-4d88-99a9-dc4196b5d95b",
-      "explanation": "Reflection on work theme showing green stage characteristics.",
+      "statement": "I want to create more balance and equality in how we share responsibilities in our relationship",
+      "context": "User focused on creating equitable partnerships. They value consensus and mutual support.",
+      "explanation": "Reflection on romantic theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1773,8 +1773,8 @@
   {
     "timestamp": "2024-03-17T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? 537f3772-fcf4-4425-9de9-b29b1e06f3e6",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. 537f3772-fcf4-4425-9de9-b29b1e06f3e6",
+      "statement": "I'm understanding how different communities I'm part of influence each other and create opportunities for integration",
+      "context": "User seeing connections between different social systems. They're thinking about how to integrate diverse communities.",
       "explanation": "Reflection on community theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1796,9 +1796,9 @@
   {
     "timestamp": "2024-03-18T23:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 3617f625-0fa9-49c5-b851-811b46d14307",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 3617f625-0fa9-49c5-b851-811b46d14307",
-      "explanation": "Reflection on romantic theme showing green → yellow stage characteristics.",
+      "statement": "I'm learning to adapt my approach based on what the situation actually needs, rather than following a fixed plan",
+      "context": "User thinking flexibly and adapting to context. They're moving beyond rigid structures to responsive systems.",
+      "explanation": "Reflection on work theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1819,9 +1819,9 @@
   {
     "timestamp": "2024-03-19T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 64e6f562-5dff-4ac2-ab18-980c78caea93",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 64e6f562-5dff-4ac2-ab18-980c78caea93",
-      "explanation": "Reflection on work theme showing green → yellow stage characteristics.",
+      "statement": "I'm seeing how my partner and I are both part of larger systems that influence our relationship dynamics",
+      "context": "User thinking systemically about relationship patterns. They see how external factors and internal systems interact.",
+      "explanation": "Reflection on romantic theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1842,9 +1842,9 @@
   {
     "timestamp": "2024-03-20T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? 02b6912e-f906-41fa-905d-1e058faf9f05",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. 02b6912e-f906-41fa-905d-1e058faf9f05",
-      "explanation": "Reflection on romantic theme showing green → yellow stage characteristics.",
+      "statement": "I'm understanding how different communities I'm part of influence each other and create opportunities for integration",
+      "context": "User seeing connections between different social systems. They're thinking about how to integrate diverse communities.",
+      "explanation": "Reflection on community theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1865,8 +1865,8 @@
   {
     "timestamp": "2024-03-21T23:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm 69b40b33-59a4-4770-9ca7-6b5c4d474597",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. 69b40b33-59a4-4770-9ca7-6b5c4d474597",
+      "statement": "I'm seeing how different systems at work interconnect and affect each other in ways I hadn't noticed before",
+      "context": "User thinking in systems and seeing interconnections. They're recognizing patterns and relationships between different elements.",
       "explanation": "Reflection on work theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1888,9 +1888,9 @@
   {
     "timestamp": "2024-03-22T23:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups 81cb0aee-5886-4398-bced-4cca3daa37b6",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. 81cb0aee-5886-4398-bced-4cca3daa37b6",
-      "explanation": "Reflection on community theme showing green → yellow stage characteristics.",
+      "statement": "I'm seeing how my partner and I are both part of larger systems that influence our relationship dynamics",
+      "context": "User thinking systemically about relationship patterns. They see how external factors and internal systems interact.",
+      "explanation": "Reflection on romantic theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1911,8 +1911,8 @@
   {
     "timestamp": "2024-03-23T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 502cb361-1eed-4e7f-a522-fa413e4fdaa9",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 502cb361-1eed-4e7f-a522-fa413e4fdaa9",
+      "statement": "I'm noticing how my social connections form networks that influence each other in complex ways",
+      "context": "User thinking about community as interconnected systems. They see relationships and patterns others might miss.",
       "explanation": "Reflection on community theme showing green → yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -1934,9 +1934,9 @@
   {
     "timestamp": "2024-03-24T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 2d90f1c8-20d3-45eb-84b1-a262c222a02e",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 2d90f1c8-20d3-45eb-84b1-a262c222a02e",
-      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
+      "statement": "I'm recognizing that work, relationships, and community are all part of an integrated system of human experience",
+      "context": "User thinking holistically about how different life domains interconnect. They see the bigger picture.",
+      "explanation": "Reflection on work theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1957,9 +1957,9 @@
   {
     "timestamp": "2024-03-25T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 0c8f98ba-f484-4a21-a7b2-eb6cb8f09fcd",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 0c8f98ba-f484-4a21-a7b2-eb6cb8f09fcd",
-      "explanation": "Reflection on community theme showing yellow stage characteristics.",
+      "statement": "I'm seeing how my partner and I are both part of larger systems that influence our relationship dynamics",
+      "context": "User thinking systemically about relationship patterns. They see how external factors and internal systems interact.",
+      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -1980,9 +1980,9 @@
   {
     "timestamp": "2024-03-26T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 0fb43bc9-daa3-45b1-821c-ef4703e50bc0",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 0fb43bc9-daa3-45b1-821c-ef4703e50bc0",
-      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
+      "statement": "I'm noticing how my social connections form networks that influence each other in complex ways",
+      "context": "User thinking about community as interconnected systems. They see relationships and patterns others might miss.",
+      "explanation": "Reflection on community theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2003,8 +2003,8 @@
   {
     "timestamp": "2024-03-27T23:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 4a12269c-25ab-457b-bfbe-41d8895d8cd7",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 4a12269c-25ab-457b-bfbe-41d8895d8cd7",
+      "statement": "I'm seeing how different systems at work interconnect and affect each other in ways I hadn't noticed before",
+      "context": "User thinking in systems and seeing interconnections. They're recognizing patterns and relationships between different elements.",
       "explanation": "Reflection on work theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2026,9 +2026,9 @@
   {
     "timestamp": "2024-03-28T23:00:00.000Z",
     "pixel": {
-      "statement": "My friends all seem to have their lives together and I feel like I'm falling behind e9269adf-88ce-4fa0-9844-ca1a2f3aec41",
-      "context": "User comparing themselves to friends and feeling inadequate. They're struggling with their own path while seeing others succeed. e9269adf-88ce-4fa0-9844-ca1a2f3aec41",
-      "explanation": "Reflection on community theme showing yellow stage characteristics.",
+      "statement": "I'm understanding how my relationship patterns connect to larger life patterns and what that means for growth",
+      "context": "User seeing their relationship in a larger context. They're thinking systemically about personal growth.",
+      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2049,9 +2049,9 @@
   {
     "timestamp": "2024-03-29T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging dabfaef5-3ead-4c8a-b717-955c05f6ede0",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. dabfaef5-3ead-4c8a-b717-955c05f6ede0",
-      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
+      "statement": "I'm understanding how different communities I'm part of influence each other and create opportunities for integration",
+      "context": "User seeing connections between different social systems. They're thinking about how to integrate diverse communities.",
+      "explanation": "Reflection on community theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2072,9 +2072,9 @@
   {
     "timestamp": "2024-03-30T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? a32132df-032c-4493-b340-2cd3a9815244",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. a32132df-032c-4493-b340-2cd3a9815244",
-      "explanation": "Reflection on romantic theme showing yellow stage characteristics.",
+      "statement": "I'm recognizing that work, relationships, and community are all part of an integrated system of human experience",
+      "context": "User thinking holistically about how different life domains interconnect. They see the bigger picture.",
+      "explanation": "Reflection on work theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2095,8 +2095,8 @@
   {
     "timestamp": "2024-03-31T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 0e99d2bd-fcc5-45a4-b82e-a06125f3e2b3",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 0e99d2bd-fcc5-45a4-b82e-a06125f3e2b3",
+      "statement": "I'm understanding how love operates as a fundamental force that connects all beings and transcends individual relationships",
+      "context": "User thinking about love as a universal principle. They see relationships as expressions of a larger force.",
       "explanation": "Reflection on romantic theme showing yellow → turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2118,9 +2118,9 @@
   {
     "timestamp": "2024-04-01T23:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 9cc12129-2b9b-4e7a-866e-4f6e179a136b",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 9cc12129-2b9b-4e7a-866e-4f6e179a136b",
-      "explanation": "Reflection on work theme showing yellow → turquoise stage characteristics.",
+      "statement": "I'm recognizing how communities are expressions of collective consciousness that evolve toward greater integration",
+      "context": "User thinking about community as evolving consciousness. They see groups as part of humanity's collective development.",
+      "explanation": "Reflection on community theme showing yellow → turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2141,18 +2141,18 @@
   {
     "timestamp": "2024-04-02T23:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle c0ce67bb-e865-4b1c-8241-21324f7fecb2",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. c0ce67bb-e865-4b1c-8241-21324f7fecb2",
-      "explanation": "Reflection on romantic theme showing yellow → turquoise stage characteristics.",
+      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it",
+      "context": "User concerned about technical debt but feeling powerless to fix it alone. They see problems others ignore.",
+      "explanation": "Reflection on work theme showing yellow → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
+        "red": 0.7,
         "blue": 0,
         "orange": 0,
         "green": 0,
         "yellow": 0.3,
-        "turquoise": 0.7,
+        "turquoise": 0,
         "coral": 0,
         "teal": 0
       },
@@ -2164,8 +2164,8 @@
   {
     "timestamp": "2024-04-03T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? a5e24c8c-5798-4fd8-8058-a6df099291ec",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. a5e24c8c-5798-4fd8-8058-a6df099291ec",
+      "statement": "I'm understanding how my relationship is part of a larger journey of love and connection that transcends individual needs",
+      "context": "User seeing their relationship in terms of universal love and connection. They think beyond personal to collective experience.",
       "explanation": "Reflection on romantic theme showing yellow → turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2187,8 +2187,8 @@
   {
     "timestamp": "2024-04-04T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 9f6b9b4f-5a83-47b4-ab0e-9b86cd911b82",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 9f6b9b4f-5a83-47b4-ab0e-9b86cd911b82",
+      "statement": "I'm recognizing how my community connections are part of a global network of human consciousness and growth",
+      "context": "User thinking about community in terms of global interconnectedness. They see local connections as part of universal patterns.",
       "explanation": "Reflection on community theme showing yellow → turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2210,18 +2210,18 @@
   {
     "timestamp": "2024-04-05T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 33811d59-60b9-4702-9a75-ed0971326b28",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 33811d59-60b9-4702-9a75-ed0971326b28",
-      "explanation": "Reflection on community theme showing yellow → turquoise stage characteristics.",
+      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy",
+      "context": "User frustrated with lack of control and constant changes. They feel their time and effort is being wasted by poor management.",
+      "explanation": "Reflection on work theme showing yellow → red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
+        "red": 0.7,
         "blue": 0,
         "orange": 0,
         "green": 0,
         "yellow": 0.3,
-        "turquoise": 0.7,
+        "turquoise": 0,
         "coral": 0,
         "teal": 0
       },
@@ -2233,9 +2233,9 @@
   {
     "timestamp": "2024-04-06T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? efb24187-0ef0-4a88-a9ce-1091ad8f05de",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. efb24187-0ef0-4a88-a9ce-1091ad8f05de",
-      "explanation": "Reflection on community theme showing yellow → turquoise stage characteristics.",
+      "statement": "I'm understanding how my relationship is part of a larger journey of love and connection that transcends individual needs",
+      "context": "User seeing their relationship in terms of universal love and connection. They think beyond personal to collective experience.",
+      "explanation": "Reflection on romantic theme showing yellow → turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2256,8 +2256,8 @@
   {
     "timestamp": "2024-04-07T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? a7ec2449-5318-4740-b221-d26356a6c6fb",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. a7ec2449-5318-4740-b221-d26356a6c6fb",
+      "statement": "I'm recognizing how communities are expressions of collective consciousness that evolve toward greater integration",
+      "context": "User thinking about community as evolving consciousness. They see groups as part of humanity's collective development.",
       "explanation": "Reflection on community theme showing turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2279,32 +2279,32 @@
   {
     "timestamp": "2024-04-08T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 17416d16-2109-4441-90c7-374d82094740",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 17416d16-2109-4441-90c7-374d82094740",
-      "explanation": "Reflection on work theme showing turquoise stage characteristics.",
+      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy",
+      "context": "User frustrated with lack of control and constant changes. They feel their time and effort is being wasted by poor management.",
+      "explanation": "Reflection on work theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
+        "red": 1,
         "blue": 0,
         "orange": 0,
         "green": 0,
         "yellow": 0,
-        "turquoise": 1,
+        "turquoise": 0,
         "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
-      "absolute_thinking": false
+      "absolute_thinking": true
     }
   },
   {
     "timestamp": "2024-04-09T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy be350396-2274-4a06-8036-3eef7587c93e",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. be350396-2274-4a06-8036-3eef7587c93e",
-      "explanation": "Reflection on work theme showing turquoise stage characteristics.",
+      "statement": "I'm understanding how my relationship is part of a larger journey of love and connection that transcends individual needs",
+      "context": "User seeing their relationship in terms of universal love and connection. They think beyond personal to collective experience.",
+      "explanation": "Reflection on romantic theme showing turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2325,9 +2325,9 @@
   {
     "timestamp": "2024-04-10T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy 061586a0-0c47-43d1-8279-9402e6072ba2",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. 061586a0-0c47-43d1-8279-9402e6072ba2",
-      "explanation": "Reflection on work theme showing turquoise stage characteristics.",
+      "statement": "I'm recognizing how my community connections are part of a global network of human consciousness and growth",
+      "context": "User thinking about community in terms of global interconnectedness. They see local connections as part of universal patterns.",
+      "explanation": "Reflection on community theme showing turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2348,31 +2348,31 @@
   {
     "timestamp": "2024-04-11T23:00:00.000Z",
     "pixel": {
-      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive 97a5f97b-aad9-4258-a28d-f21d7625b0fb",
-      "context": "User frustrated with meeting culture that prevents deep work. They want to focus on building but feel pulled in too many directions. 97a5f97b-aad9-4258-a28d-f21d7625b0fb",
-      "explanation": "Reflection on work theme showing turquoise stage characteristics.",
+      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy",
+      "context": "User frustrated with lack of control and constant changes. They feel their time and effort is being wasted by poor management.",
+      "explanation": "Reflection on work theme showing red stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
+        "red": 1,
         "blue": 0,
         "orange": 0,
         "green": 0,
         "yellow": 0,
-        "turquoise": 1,
+        "turquoise": 0,
         "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
-      "absolute_thinking": false
+      "absolute_thinking": true
     }
   },
   {
     "timestamp": "2024-04-12T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 2e0b2848-af73-4198-b476-a81358882324",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 2e0b2848-af73-4198-b476-a81358882324",
+      "statement": "I'm understanding how my relationship is part of a larger journey of love and connection that transcends individual needs",
+      "context": "User seeing their relationship in terms of universal love and connection. They think beyond personal to collective experience.",
       "explanation": "Reflection on romantic theme showing turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2394,8 +2394,8 @@
   {
     "timestamp": "2024-04-13T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? cd5da10e-4101-4c79-8f5e-31e6061c4955",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. cd5da10e-4101-4c79-8f5e-31e6061c4955",
+      "statement": "I'm recognizing how my community connections are part of a global network of human consciousness and growth",
+      "context": "User thinking about community in terms of global interconnectedness. They see local connections as part of universal patterns.",
       "explanation": "Reflection on community theme showing turquoise stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2417,32 +2417,32 @@
   {
     "timestamp": "2024-04-14T23:00:00.000Z",
     "pixel": {
-      "statement": "I said yes to too many social commitments this week and now I'm exhausted 27b28704-e159-4884-a516-c32a544b7928",
-      "context": "User overcommitted themselves socially. They want to maintain relationships but struggle with boundaries and saying no. 27b28704-e159-4884-a516-c32a544b7928",
-      "explanation": "Reflection on community theme showing turquoise → coral stage characteristics.",
+      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality",
+      "context": "User committed to best practices and quality standards. They value structure and process but feel unsupported.",
+      "explanation": "Reflection on work theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
-        "blue": 0,
+        "red": 0.3,
+        "blue": 0.7,
         "orange": 0,
         "green": 0,
         "yellow": 0,
-        "turquoise": 0.3,
-        "coral": 0.7,
+        "turquoise": 0,
+        "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
-      "absolute_thinking": false
+      "absolute_thinking": true
     }
   },
   {
     "timestamp": "2024-04-15T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together f1a4f89a-8e4c-4e10-be13-64ed8319494c",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. f1a4f89a-8e4c-4e10-be13-64ed8319494c",
-      "explanation": "Reflection on community theme showing turquoise → coral stage characteristics.",
+      "statement": "I'm understanding how my relationship includes moments of survival, achievement, harmony, and transcendent connection",
+      "context": "User experiencing relationship as a complete practice. They see all stages as valid parts of the journey.",
+      "explanation": "Reflection on romantic theme showing turquoise → coral stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2463,9 +2463,9 @@
   {
     "timestamp": "2024-04-16T23:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions a7a06712-2bc3-48d6-9f67-5a1eb1a63a39",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. a7a06712-2bc3-48d6-9f67-5a1eb1a63a39",
-      "explanation": "Reflection on romantic theme showing turquoise → coral stage characteristics.",
+      "statement": "I'm seeing community as a practice that honors all stages of human development and creates space for everyone's journey",
+      "context": "User integrating all stages of community development. They see community as inclusive of all human experiences.",
+      "explanation": "Reflection on community theme showing turquoise → coral stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2486,31 +2486,31 @@
   {
     "timestamp": "2024-04-17T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality ba3638cd-5ac6-42aa-8f35-d35dda106b68",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. ba3638cd-5ac6-42aa-8f35-d35dda106b68",
-      "explanation": "Reflection on work theme showing turquoise → coral stage characteristics.",
+      "statement": "I need to establish better boundaries at work to maintain my work-life balance",
+      "context": "User recognizing the need for structure and rules to protect their time and energy.",
+      "explanation": "Reflection on work theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
-        "blue": 0,
+        "red": 0.3,
+        "blue": 0.7,
         "orange": 0,
         "green": 0,
         "yellow": 0,
-        "turquoise": 0.3,
-        "coral": 0.7,
+        "turquoise": 0,
+        "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
-      "absolute_thinking": false
+      "absolute_thinking": true
     }
   },
   {
     "timestamp": "2024-04-18T23:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 53651b12-e0a7-4aeb-9173-7557f5577241",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 53651b12-e0a7-4aeb-9173-7557f5577241",
+      "statement": "I'm understanding how my relationship includes moments of survival, achievement, harmony, and transcendent connection",
+      "context": "User experiencing relationship as a complete practice. They see all stages as valid parts of the journey.",
       "explanation": "Reflection on romantic theme showing turquoise → coral stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2532,9 +2532,9 @@
   {
     "timestamp": "2024-04-19T23:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions a38fcd44-344e-4681-9c6d-43d5b609a5bd",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. a38fcd44-344e-4681-9c6d-43d5b609a5bd",
-      "explanation": "Reflection on romantic theme showing turquoise → coral stage characteristics.",
+      "statement": "I'm seeing how communities need to honor all stages of development and create space for everyone's unique journey",
+      "context": "User thinking about community as inclusive of all stages. They want to create spaces that honor all human experiences.",
+      "explanation": "Reflection on community theme showing turquoise → coral stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2555,32 +2555,32 @@
   {
     "timestamp": "2024-04-20T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy b592e7f9-0d14-4e46-b024-af9d78aa21ff",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. b592e7f9-0d14-4e46-b024-af9d78aa21ff",
-      "explanation": "Reflection on work theme showing turquoise → coral stage characteristics.",
+      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality",
+      "context": "User committed to best practices and quality standards. They value structure and process but feel unsupported.",
+      "explanation": "Reflection on work theme showing red → blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
-        "red": 0,
-        "blue": 0,
+        "red": 0.3,
+        "blue": 0.7,
         "orange": 0,
         "green": 0,
         "yellow": 0,
-        "turquoise": 0.3,
-        "coral": 0.7,
+        "turquoise": 0,
+        "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
-      "absolute_thinking": false
+      "absolute_thinking": true
     }
   },
   {
     "timestamp": "2024-04-21T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 95b957b4-5f98-4520-9117-716364f849a5",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 95b957b4-5f98-4520-9117-716364f849a5",
-      "explanation": "Reflection on community theme showing coral stage characteristics.",
+      "statement": "I'm understanding how my relationship includes moments of survival, achievement, harmony, and transcendent connection",
+      "context": "User experiencing relationship as a complete practice. They see all stages as valid parts of the journey.",
+      "explanation": "Reflection on romantic theme showing coral stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2601,9 +2601,9 @@
   {
     "timestamp": "2024-04-22T23:00:00.000Z",
     "pixel": {
-      "statement": "We keep having the same argument over and over. I don't know how to break this cycle 5de3431d-f60b-411d-8505-2b7efd64609f",
-      "context": "User stuck in repetitive conflict patterns. They recognize the pattern but feel powerless to change the dynamic. 5de3431d-f60b-411d-8505-2b7efd64609f",
-      "explanation": "Reflection on romantic theme showing coral stage characteristics.",
+      "statement": "I'm seeing how communities need to honor all stages of development and create space for everyone's unique journey",
+      "context": "User thinking about community as inclusive of all stages. They want to create spaces that honor all human experiences.",
+      "explanation": "Reflection on community theme showing coral stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2624,19 +2624,19 @@
   {
     "timestamp": "2024-04-23T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? ce8e578a-4504-41c4-a1bd-f29d655cfcdf",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. ce8e578a-4504-41c4-a1bd-f29d655cfcdf",
-      "explanation": "Reflection on romantic theme showing coral stage characteristics.",
+      "statement": "I spent the whole day in meetings and got zero coding done. This is so unproductive",
+      "context": "User frustrated with meeting culture that prevents deep work. They want structure but feel pulled in too many directions.",
+      "explanation": "Reflection on work theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
-        "blue": 0,
+        "blue": 1,
         "orange": 0,
         "green": 0,
         "yellow": 0,
         "turquoise": 0,
-        "coral": 1,
+        "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
@@ -2647,8 +2647,8 @@
   {
     "timestamp": "2024-04-24T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? da13b536-d25c-4cba-beb6-0e32f275c7a2",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. da13b536-d25c-4cba-beb6-0e32f275c7a2",
+      "statement": "I'm understanding love as a practice that includes survival needs, achievement, harmony, and transcendent connection",
+      "context": "User integrating all stages of relationship development. They see love as a complete journey of human connection.",
       "explanation": "Reflection on romantic theme showing coral stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2670,8 +2670,8 @@
   {
     "timestamp": "2024-04-25T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 85bb8574-9323-47ec-afc8-01efabfb45d1",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 85bb8574-9323-47ec-afc8-01efabfb45d1",
+      "statement": "I'm seeing how communities need to honor all stages of development and create space for everyone's unique journey",
+      "context": "User thinking about community as inclusive of all stages. They want to create spaces that honor all human experiences.",
       "explanation": "Reflection on community theme showing coral stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2693,19 +2693,19 @@
   {
     "timestamp": "2024-04-26T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? a5149569-62bf-4aaa-ba6f-f5827e75a209",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. a5149569-62bf-4aaa-ba6f-f5827e75a209",
-      "explanation": "Reflection on community theme showing coral stage characteristics.",
+      "statement": "I need to establish better boundaries at work to maintain my work-life balance",
+      "context": "User recognizing the need for structure and rules to protect their time and energy.",
+      "explanation": "Reflection on work theme showing blue stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
-        "blue": 0,
+        "blue": 1,
         "orange": 0,
         "green": 0,
         "yellow": 0,
         "turquoise": 0,
-        "coral": 1,
+        "coral": 0,
         "teal": 0
       },
       "confidence_score": 0.7,
@@ -2716,8 +2716,8 @@
   {
     "timestamp": "2024-04-27T23:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions a4890908-6bf0-4e04-b4b5-b46dc682b1e4",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. a4890908-6bf0-4e04-b4b5-b46dc682b1e4",
+      "statement": "I'm understanding love as a practice that includes survival needs, achievement, harmony, and transcendent connection",
+      "context": "User integrating all stages of relationship development. They see love as a complete journey of human connection.",
       "explanation": "Reflection on romantic theme showing coral stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2739,9 +2739,9 @@
   {
     "timestamp": "2024-04-28T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm tired of being the only one who writes tests. No one else on the team seems to care about code quality c88c9fe5-7d73-43f4-b6c4-568a95d02985",
-      "context": "User feeling isolated in their commitment to best practices. They value quality and maintainability but feel unsupported by their team. c88c9fe5-7d73-43f4-b6c4-568a95d02985",
-      "explanation": "Reflection on work theme showing coral → teal stage characteristics.",
+      "statement": "I'm experiencing community as a natural expression of interconnectedness, where connection happens effortlessly",
+      "context": "User experiencing community as enlightened practice. They're fully present and connection flows naturally.",
+      "explanation": "Reflection on community theme showing coral → teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2762,20 +2762,20 @@
   {
     "timestamp": "2024-04-29T23:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional cf6c66f9-21aa-4f36-9278-487f2bef4d74",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. cf6c66f9-21aa-4f36-9278-487f2bef4d74",
-      "explanation": "Reflection on romantic theme showing coral → teal stage characteristics.",
+      "statement": "I want to contribute to a work culture that values people's wellbeing as much as productivity",
+      "context": "User focused on creating harmonious work environments that prioritize people over profit.",
+      "explanation": "Reflection on work theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
         "blue": 0,
-        "orange": 0,
-        "green": 0,
+        "orange": 0.3,
+        "green": 0.7,
         "yellow": 0,
         "turquoise": 0,
-        "coral": 0.3,
-        "teal": 0.7
+        "coral": 0,
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -2785,8 +2785,8 @@
   {
     "timestamp": "2024-04-30T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 5a2a5d3f-1ac8-47cb-aa27-b7c7028ce068",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 5a2a5d3f-1ac8-47cb-aa27-b7c7028ce068",
+      "statement": "I'm understanding how love is the fundamental nature of reality, and relationships are just expressions of that truth",
+      "context": "User experiencing love as fundamental reality. They see relationships as natural expressions of universal love.",
       "explanation": "Reflection on romantic theme showing coral → teal stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2808,9 +2808,9 @@
   {
     "timestamp": "2024-05-01T23:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions 4c1d9368-15fd-4676-a70b-44e31ef717eb",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. 4c1d9368-15fd-4676-a70b-44e31ef717eb",
-      "explanation": "Reflection on romantic theme showing coral → teal stage characteristics.",
+      "statement": "I'm recognizing how community is a natural expression of our interconnected nature, not something we need to create",
+      "context": "User experiencing community as natural reality. They see connection as fundamental, not something to be achieved.",
+      "explanation": "Reflection on community theme showing coral → teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2831,20 +2831,20 @@
   {
     "timestamp": "2024-05-02T23:00:00.000Z",
     "pixel": {
-      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it 2bb5feca-9dd5-4265-96cc-bec2694f1374",
-      "context": "User concerned about technical debt and long-term maintainability. They see problems others ignore and feel responsible for fixing them. 2bb5feca-9dd5-4265-96cc-bec2694f1374",
-      "explanation": "Reflection on work theme showing coral → teal stage characteristics.",
+      "statement": "I want to create a more collaborative and inclusive work environment where everyone feels heard",
+      "context": "User focused on harmony and consensus. They value equality and want everyone to feel included.",
+      "explanation": "Reflection on work theme showing orange → green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
         "blue": 0,
-        "orange": 0,
-        "green": 0,
+        "orange": 0.3,
+        "green": 0.7,
         "yellow": 0,
         "turquoise": 0,
-        "coral": 0.3,
-        "teal": 0.7
+        "coral": 0,
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -2854,8 +2854,8 @@
   {
     "timestamp": "2024-05-03T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging f2b74762-0fc3-4625-9a44-e47032071dd9",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. f2b74762-0fc3-4625-9a44-e47032071dd9",
+      "statement": "I'm experiencing love as a natural state of being that doesn't require effort or strategy, just presence and openness",
+      "context": "User experiencing love as enlightened practice. They're fully present in love without needing to manage or control it.",
       "explanation": "Reflection on romantic theme showing coral → teal stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2877,9 +2877,9 @@
   {
     "timestamp": "2024-05-04T23:00:00.000Z",
     "pixel": {
-      "statement": "The codebase is a mess and I'm the only one who seems to want to refactor it 55130f20-94ab-4b86-a051-e4db3877eca1",
-      "context": "User concerned about technical debt and long-term maintainability. They see problems others ignore and feel responsible for fixing them. 55130f20-94ab-4b86-a051-e4db3877eca1",
-      "explanation": "Reflection on work theme showing coral → teal stage characteristics.",
+      "statement": "I'm experiencing community as a natural expression of interconnectedness, where connection happens effortlessly",
+      "context": "User experiencing community as enlightened practice. They're fully present and connection flows naturally.",
+      "explanation": "Reflection on community theme showing coral → teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2900,20 +2900,20 @@
   {
     "timestamp": "2024-05-05T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy 021e754e-dd87-489d-8f4d-b7096b45c449",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. 021e754e-dd87-489d-8f4d-b7096b45c449",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I want to create a more collaborative and inclusive work environment where everyone feels heard",
+      "context": "User focused on harmony and consensus. They value equality and want everyone to feel included.",
+      "explanation": "Reflection on work theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
         "blue": 0,
         "orange": 0,
-        "green": 0,
+        "green": 1,
         "yellow": 0,
         "turquoise": 0,
         "coral": 0,
-        "teal": 1
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -2923,8 +2923,8 @@
   {
     "timestamp": "2024-05-06T23:00:00.000Z",
     "pixel": {
-      "statement": "I care too much about what my partner thinks of me. I change my behavior based on their reactions 15ff86ef-5a4b-49c9-9659-42641c8309d4",
-      "context": "User reflecting on people-pleasing patterns in their relationship. They're aware this is limiting their authenticity but haven't broken the pattern yet. 15ff86ef-5a4b-49c9-9659-42641c8309d4",
+      "statement": "I'm experiencing love as a natural state of being that doesn't require effort or strategy, just presence and openness",
+      "context": "User experiencing love as enlightened practice. They're fully present in love without needing to manage or control it.",
       "explanation": "Reflection on romantic theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -2946,9 +2946,9 @@
   {
     "timestamp": "2024-05-07T23:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional 35b97c29-771e-4d7f-a0c1-07479a3a15b6",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. 35b97c29-771e-4d7f-a0c1-07479a3a15b6",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I'm experiencing community as a natural expression of interconnectedness, where connection happens effortlessly",
+      "context": "User experiencing community as enlightened practice. They're fully present and connection flows naturally.",
+      "explanation": "Reflection on community theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -2969,20 +2969,20 @@
   {
     "timestamp": "2024-05-08T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? 76db21b9-d2dc-4e92-a94a-4ceb78029c2f",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. 76db21b9-d2dc-4e92-a94a-4ceb78029c2f",
-      "explanation": "Reflection on community theme showing teal stage characteristics.",
+      "statement": "I want to contribute to a work culture that values people's wellbeing as much as productivity",
+      "context": "User focused on creating harmonious work environments that prioritize people over profit.",
+      "explanation": "Reflection on work theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
         "blue": 0,
         "orange": 0,
-        "green": 0,
+        "green": 1,
         "yellow": 0,
         "turquoise": 0,
         "coral": 0,
-        "teal": 1
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -2992,9 +2992,9 @@
   {
     "timestamp": "2024-05-09T23:00:00.000Z",
     "pixel": {
-      "statement": "My friend group has been drifting apart and I don't know how to bring us back together 428615ec-c108-4ed7-8b22-1d54c4c80e6c",
-      "context": "User noticing their community is fragmenting. They value these relationships but feel powerless to maintain the connection. 428615ec-c108-4ed7-8b22-1d54c4c80e6c",
-      "explanation": "Reflection on community theme showing teal stage characteristics.",
+      "statement": "I'm experiencing love as a natural state of being that doesn't require effort or strategy, just presence and openness",
+      "context": "User experiencing love as enlightened practice. They're fully present in love without needing to manage or control it.",
+      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3015,8 +3015,8 @@
   {
     "timestamp": "2024-05-10T23:00:00.000Z",
     "pixel": {
-      "statement": "I moved to a new city and I'm having such a hard time making friends. Everyone already has their groups 16cb6c96-ec69-4e3a-b452-a0c366e0f92a",
-      "context": "User feeling isolated in a new place. They want connection and community but feel excluded from existing social circles. 16cb6c96-ec69-4e3a-b452-a0c366e0f92a",
+      "statement": "I'm experiencing community as a natural expression of interconnectedness, where connection happens effortlessly",
+      "context": "User experiencing community as enlightened practice. They're fully present and connection flows naturally.",
       "explanation": "Reflection on community theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
@@ -3038,20 +3038,20 @@
   {
     "timestamp": "2024-05-11T23:00:00.000Z",
     "pixel": {
-      "statement": "I hate how everyone expects you to respond to work emails at 11pm bdcd3979-632d-4aa0-974c-7927a56071ea",
-      "context": "User expressing frustration with always-on work culture. They value boundaries but feel pressure to be constantly available. This expectation is costing them evening rest and personal time. bdcd3979-632d-4aa0-974c-7927a56071ea",
-      "explanation": "Reflection on work theme showing teal stage characteristics.",
+      "statement": "I want to create a more collaborative and inclusive work environment where everyone feels heard",
+      "context": "User focused on harmony and consensus. They value equality and want everyone to feel included.",
+      "explanation": "Reflection on work theme showing green stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
         "red": 0,
         "blue": 0,
         "orange": 0,
-        "green": 0,
+        "green": 1,
         "yellow": 0,
         "turquoise": 0,
         "coral": 0,
-        "teal": 1
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -3061,9 +3061,9 @@
   {
     "timestamp": "2024-05-12T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one reaching out to maintain friendships. If I stopped, would anyone notice? bc8f3284-edb5-4dfc-9017-860b81704a63",
-      "context": "User questioning the reciprocity in their friendships. They want mutual effort but feel like they're the only one investing. bc8f3284-edb5-4dfc-9017-860b81704a63",
-      "explanation": "Reflection on community theme showing teal stage characteristics.",
+      "statement": "I'm understanding how love is the fundamental nature of reality, and relationships are just expressions of that truth",
+      "context": "User experiencing love as fundamental reality. They see relationships as natural expressions of universal love.",
+      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3084,9 +3084,9 @@
   {
     "timestamp": "2024-05-13T23:00:00.000Z",
     "pixel": {
-      "statement": "My partner never helps with household chores unless I ask, and then I feel like I'm nagging 6d58df4c-d746-4b23-b436-542466ff443b",
-      "context": "User frustrated with unequal domestic labor. They want partnership but feel like they're managing their partner instead of collaborating. 6d58df4c-d746-4b23-b436-542466ff443b",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I'm recognizing how community is a natural expression of our interconnected nature, not something we need to create",
+      "context": "User experiencing community as natural reality. They see connection as fundamental, not something to be achieved.",
+      "explanation": "Reflection on community theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3107,9 +3107,9 @@
   {
     "timestamp": "2024-05-14T23:00:00.000Z",
     "pixel": {
-      "statement": "I'm afraid to tell my partner what I really need because I don't want to seem needy 46dc5ffa-96e0-409c-b864-310f7cfaa5a9",
-      "context": "User suppressing their needs to avoid conflict or rejection. They value the relationship but at the cost of their own authenticity. 46dc5ffa-96e0-409c-b864-310f7cfaa5a9",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I'm recognizing that work, relationships, and community are all part of an integrated system of human experience",
+      "context": "User thinking holistically about how different life domains interconnect. They see the bigger picture.",
+      "explanation": "Reflection on work theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3117,10 +3117,10 @@
         "blue": 0,
         "orange": 0,
         "green": 0,
-        "yellow": 0,
+        "yellow": 1,
         "turquoise": 0,
         "coral": 0,
-        "teal": 1
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -3130,9 +3130,9 @@
   {
     "timestamp": "2024-05-15T23:00:00.000Z",
     "pixel": {
-      "statement": "My manager keeps changing the requirements mid-sprint and it's driving me crazy e48e5cd8-3b03-4ae8-a5c8-2e792f50f161",
-      "context": "User frustrated with lack of planning and constant scope changes. They feel their time and effort is being wasted by poor project management. e48e5cd8-3b03-4ae8-a5c8-2e792f50f161",
-      "explanation": "Reflection on work theme showing teal stage characteristics.",
+      "statement": "I'm understanding how love is the fundamental nature of reality, and relationships are just expressions of that truth",
+      "context": "User experiencing love as fundamental reality. They see relationships as natural expressions of universal love.",
+      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3153,9 +3153,9 @@
   {
     "timestamp": "2024-05-16T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one initiating conversations about our relationship. Why can't they bring things up? 579c2935-8f09-4fb7-8d2b-f0cdc5e974f8",
-      "context": "User feeling like they carry the emotional labor in the relationship. They want mutual engagement but feel like they're doing all the work. 579c2935-8f09-4fb7-8d2b-f0cdc5e974f8",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I'm recognizing how community is a natural expression of our interconnected nature, not something we need to create",
+      "context": "User experiencing community as natural reality. They see connection as fundamental, not something to be achieved.",
+      "explanation": "Reflection on community theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3176,9 +3176,9 @@
   {
     "timestamp": "2024-05-17T23:00:00.000Z",
     "pixel": {
-      "statement": "We used to have so much fun together, but now everything feels transactional 1b899501-7dc9-4b22-9c6f-60b0c9aedc28",
-      "context": "User noticing the relationship has lost its spark. They miss the connection and playfulness but don't know how to get it back. 1b899501-7dc9-4b22-9c6f-60b0c9aedc28",
-      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
+      "statement": "I'm learning to adapt my approach based on what the situation actually needs, rather than following a fixed plan",
+      "context": "User thinking flexibly and adapting to context. They're moving beyond rigid structures to responsive systems.",
+      "explanation": "Reflection on work theme showing yellow stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
@@ -3186,10 +3186,10 @@
         "blue": 0,
         "orange": 0,
         "green": 0,
-        "yellow": 0,
+        "yellow": 1,
         "turquoise": 0,
         "coral": 0,
-        "teal": 1
+        "teal": 0
       },
       "confidence_score": 0.7,
       "too_nuanced": false,
@@ -3199,9 +3199,9 @@
   {
     "timestamp": "2024-05-18T23:00:00.000Z",
     "pixel": {
-      "statement": "I feel like I'm always the one organizing things for my friend group. Why doesn't anyone else step up? 4560a2c5-8c05-42e1-a94f-900ae7fa1003",
-      "context": "User frustrated with being the default organizer. They want to participate in community but feel burdened by always being responsible. 4560a2c5-8c05-42e1-a94f-900ae7fa1003",
-      "explanation": "Reflection on community theme showing teal stage characteristics.",
+      "statement": "I'm understanding how love is the fundamental nature of reality, and relationships are just expressions of that truth",
+      "context": "User experiencing love as fundamental reality. They see relationships as natural expressions of universal love.",
+      "explanation": "Reflection on romantic theme showing teal stage characteristics.",
       "color_stage": {
         "beige": 0,
         "purple": 0,
