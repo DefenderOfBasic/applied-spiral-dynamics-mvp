@@ -4,6 +4,7 @@ import { getAllPixelsForUser } from "@/lib/chroma/client";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { PixelDeleteButton, DeleteAllPixelsButton } from "@/components/pixel-delete-buttons";
 
 export default async function PixelsPage() {
   const session = await auth();
@@ -43,10 +44,11 @@ export default async function PixelsPage() {
 
       {!error && pixels && (
         <>
-          <div className="mb-4">
+          <div className="mb-4 flex items-center justify-between">
             <p className="text-sm text-muted-foreground">
               Total pixels: {pixels.ids?.length ?? 0}
             </p>
+            {pixels.ids && pixels.ids.length > 0 && <DeleteAllPixelsButton />}
           </div>
 
           {!pixels.ids || pixels.ids.length === 0 ? (
@@ -90,7 +92,7 @@ export default async function PixelsPage() {
                             ID: {id}
                           </CardDescription>
                         </div>
-                        <div className="flex gap-2 flex-wrap">
+                        <div className="flex gap-2 flex-wrap items-center">
                           {metadata?.confidence_score !== undefined && (
                             <Badge variant="outline">
                               Confidence:{" "}
@@ -103,6 +105,7 @@ export default async function PixelsPage() {
                           {metadata?.too_nuanced === "true" && (
                             <Badge variant="secondary">Too Nuanced</Badge>
                           )}
+                          <PixelDeleteButton pixelId={id} />
                         </div>
                       </div>
                     </CardHeader>

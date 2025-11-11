@@ -5,17 +5,14 @@ Deployed at: https://applied-spiral-dynamics-mvp.vercel.app/
 - Forked from: https://github.com/vercel/ai-chatbot.
 - This is a submodule in the original project here: https://github.com/mettafive/applied-spiral-dynamics
 - Vercel project: https://vercel.com/defenders-projects/applied-spiral-dynamics-mvp/Hve5iA2eWUoppH8q25sBAe1NZwPi
+- remote ChromaDB: https://www.trychroma.com/default-4dc8c0b2/Spiral%20Dynamics%20MVP/collections/pixels-54efca47-0bfe-414c-af53-5c575299afbd
 
 TODO:
 
-- Add a vector DB (just use Chroma Cloud, or CloudFlare?)
+- Change model to Claude
+- pixel retrieval
 - Add a visualization
-  - ???
-- Change model to Claude?
-
-Questions:
-
--
+- Ability to delete pixels
 
 Notes:
 

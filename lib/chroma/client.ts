@@ -135,3 +135,51 @@ export async function storePixel({
     metadatas: [metadata],
   });
 }
+
+export async function deletePixel({
+  userId,
+  pixelId,
+}: {
+  userId: string;
+  pixelId: string;
+}) {
+  try {
+    const collection = await getOrCreatePixelCollectionForUser(userId);
+    await collection.delete({
+      ids: [pixelId],
+    });
+  } catch (error) {
+    console.error("ChromaDB error in deletePixel:", error);
+    if (error instanceof Error && error.message.includes("permission")) {
+      throw new Error(
+        "ChromaDB permission error: Please check your CHROMA_API_KEY, CHROMA_TENANT, and CHROMA_DATABASE environment variables."
+      );
+    }
+    throw error;
+  }
+}
+
+export async function deleteAllPixelsForUser(userId: string) {
+  try {
+    const collection = await getOrCreatePixelCollectionForUser(userId);
+    // Get all IDs first
+    const results = await collection.get();
+    const ids = results.ids || [];
+    
+    if (ids.length > 0) {
+      await collection.delete({
+        ids,
+      });
+    }
+    
+    return { deletedCount: ids.length };
+  } catch (error) {
+    console.error("ChromaDB error in deleteAllPixelsForUser:", error);
+    if (error instanceof Error && error.message.includes("permission")) {
+      throw new Error(
+        "ChromaDB permission error: Please check your CHROMA_API_KEY, CHROMA_TENANT, and CHROMA_DATABASE environment variables."
+      );
+    }
+    throw error;
+  }
+}
