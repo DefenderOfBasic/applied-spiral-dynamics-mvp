@@ -130,6 +130,21 @@ function reduceTo3D(embeddings: number[][]): number[][] {
   });
 }
 
+// Get top N colors by absolute value
+function getTopColorsByAbsoluteValue(
+  colorStage: Record<string, number>,
+  topN: number = 2
+): Array<[string, number]> {
+  if (!colorStage || Object.keys(colorStage).length === 0) {
+    return [];
+  }
+
+  return Object.entries(colorStage)
+    .map(([color, value]) => [color, value] as [string, number])
+    .sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]))
+    .slice(0, topN);
+}
+
 // Normalize positions to fit in a reasonable 3D space
 function normalizePositions(
   positions: number[][],
@@ -212,11 +227,13 @@ function PixelBox({
         >
           <div className="bg-black/90 text-white text-xs p-2 rounded max-w-xs pointer-events-none">
             {pixel.colorStage &&
-              Object.entries(pixel.colorStage).map(([color, value]) => (
-                <div key={color} className="mb-0.5">
-                  {color}: {Number(value).toFixed(2)}
-                </div>
-              ))}
+              getTopColorsByAbsoluteValue(pixel.colorStage, 2).map(
+                ([color, value]) => (
+                  <div key={color} className="mb-0.5">
+                    {color}: {Number(value).toFixed(2)}
+                  </div>
+                )
+              )}
           </div>
         </Html>
       )}
@@ -441,23 +458,24 @@ export function PixelVisualization3D({
                   <div>
                     <h4 className="text-sm font-semibold mb-2">Color Stage</h4>
                     <div className="flex gap-2 flex-wrap">
-                      {Object.entries(selectedPixel.colorStage).map(
-                        ([color, value]) => (
-                          <Badge
-                            key={color}
-                            variant="outline"
-                            className={
-                              Number(value) > 0.5
-                                ? "border-primary"
-                                : Number(value) < 0
-                                ? "border-destructive"
-                                : ""
-                            }
-                          >
-                            {color}: {Number(value).toFixed(2)}
-                          </Badge>
-                        )
-                      )}
+                      {getTopColorsByAbsoluteValue(
+                        selectedPixel.colorStage,
+                        2
+                      ).map(([color, value]) => (
+                        <Badge
+                          key={color}
+                          variant="outline"
+                          className={
+                            Number(value) > 0.5
+                              ? "border-primary"
+                              : Number(value) < 0
+                              ? "border-destructive"
+                              : ""
+                          }
+                        >
+                          {color}: {Number(value).toFixed(2)}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
                 )}
