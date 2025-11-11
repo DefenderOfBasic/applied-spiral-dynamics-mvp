@@ -43,8 +43,6 @@ function PureMessages({
     status,
   });
 
-  console.log(messages)
-
   useDataStream();
 
   useEffect(() => {

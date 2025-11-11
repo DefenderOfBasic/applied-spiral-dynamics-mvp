@@ -125,7 +125,6 @@ const PurePreviewMessage = ({
             if (type === "text") {
               if (mode === "view") {
                 const isProcessed = message.metadata?.processed ?? false;
-                console.log({ isProcessed })
 
                 return (
                   <div key={key} className="flex items-center gap-2">

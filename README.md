@@ -9,10 +9,8 @@ Deployed at: https://applied-spiral-dynamics-mvp.vercel.app/
 
 TODO:
 
-- Change model to Claude
 - pixel retrieval
 - Add a visualization
-- Ability to delete pixels
 
 Notes:
 
